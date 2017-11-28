@@ -6,10 +6,10 @@
         You can find the source code 
         <a href="https://github.com/zhouh/homepage">here</a>.
         Last updated: {{'now' | date: "%h %d, %Y"}}
+        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=d28YNgHwvzFscSL_U3Lhk2e3OKW0YdBP8RJU-rQhtYg&cl=ffffff&w=a"></script>
       </small>
     </div>
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="static/bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=d28YNgHwvzFscSL_U3Lhk2e3OKW0YdBP8RJU-rQhtYg&cl=ffffff&w=a"></script>
   </body>
 </html>
