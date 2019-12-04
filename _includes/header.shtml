@@ -68,7 +68,7 @@
               <a href="publications.html">Publications</a>
             </li>
             <li {% if page.section == 'Students'%} class="active" {% endif %} >
-              <a href="students.html">Publications</a>
+              <a href="students.html">Students</a>
             </li>
           </ul>
         </div>
