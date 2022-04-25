@@ -1,22 +1,3 @@
----
-layout: default
-section: publications
-title: "Hao Zhou: Publications"
----
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-  <head> 
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
-    <meta http-equiv="cache-control" content="no-cache" /> 
-    <title> 
-      Hao Zhou's Publications
-    </title>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="bibtex_js.js" type="text/javascript" charset="utf-8"></script>
-    <textarea id="bibtex_input">
 @InProceedings{chen2022mtg,
   author    = {Chen, Yiran and Song, Zhenqiao and Wu, Xianze and Wang, Danqing and Xu, Jingjing and Chen, Jiaze and Zhou, Hao and Li, Lei},
   booktitle = {Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT Findings)},
@@ -25,7 +6,7 @@ title: "Hao Zhou: Publications"
   month     = jul,
   abstract  = {We introduce MTG, a new benchmark suite for training and evaluating multilingual text generation. It is the first and largest multilingual multiway text generation benchmark with 400k human-annotated data for four generation tasks (story generation, question generation, title generation and text summarization) across five languages (English, German, French, Spanish and Chinese). Its multiway characteristic makes it possible to achieve direct cross-lingual generation between any two languages, thus facilitating knowledge transfer. Based on MTG, we set various evaluation scenarios and conduct deep analyses of several popular multilingual generation models from different aspects. Our benchmark suite can foster model performance enhancement with more human-annotated parallel data and encourage model evaluation with more diverse generation scenarios.},
   eprint    = {https://arxiv.org/abs/2108.07140},
-  author+an =  {7=highlight}
+  author+an =	 {7=highlight}
 }
 @InProceedings{bao2022latent,
   author    = {Yu Bao and Hao Zhou and Shujian Huang and Dongqi Wang and Lihua Qian and Xinyu Dai and Jiajun Chen and Lei Li},
@@ -36,7 +17,7 @@ title: "Hao Zhou: Publications"
   abstract  = {Recently, parallel text generation has received widespread attention due to its success in generation efficiency. Although many advanced techniques are proposed to improve its generation quality, they still need the help of an autoregressive model for training to overcome the one-to-many multi-modal phenomenon in the dataset, limiting their applications. In this paper, we propose latent-GLAT, which employs the discrete latent variables to capture word categorical information and invoke an advanced curriculum learning technique, alleviating the multi-modality problem. Experiment results show that our method outperforms strong baselines without the help of an autoregressive model, which further broadens the application scenarios of the parallel decoding paradigm.},
   code      = {https://github.com/baoy-nlp/Latent-GLAT},
   eprint    = {https://openreview.net/forum?id=y4xCe0MSoWx},
-  author+an =  {1=student; 2=highlight}
+  author+an =	 {1=student; 2=highlight}
 }
 @InProceedings{fu2022contextual,
   author    = {Zhiyi Fu and Wangchunshu Zhou and Jingjing Xu and Hao Zhou and Lei Li},
@@ -47,7 +28,7 @@ title: "Hao Zhou: Publications"
   abstract  = {How do masked language models (MLMs) such as BERT learn contextual representations? In this work, we analyze the learning dynamics of MLMs. We find that MLMs adopt sampled embeddings as anchors to estimate and inject contextual semantics to representations, which limits the efficiency and effectiveness of MLMs. To address these issues, we propose TACO, a simple yet effective representation learning approach to directly model global semantics. TACO extracts and aligns contextual semantics hidden in contextualized representations to encourage models to attend global semantics when generating contextualized representations. Experiments on the GLUE benchmark show that TACO achieves up to 5x speedup and up to 1.2 points average improvement over existing MLMs.},
   code      = {https:// github.com/FUZHIYI/TACO},
   eprint    = {https://openreview.net/forum?id=KWL_ElhUejN},
-  author+an =  {4=highlight}
+  author+an =	 {4=highlight}
 }
 @InProceedings{chen2022e,
   author    = {Jiangjie Chen and Rui Xu and Ziquan Fu and Wei Shi and Zhongqiao Li and Xinbo Zhang and Changzhi Sun and Lei Li and Yanghua Xiao and Hao Zhou},
@@ -58,7 +39,7 @@ title: "Hao Zhou: Publications"
   abstract  = {The ability to recognize analogies is fundamental to human cognition. Existing benchmarks to test word analogy do not reveal the underneath process of analogical reasoning of neural models. Holding the belief that models capable of reasoning should be right for the right reasons, we propose a first-of-its- kind Explainable Knowledge-intensive Analogical Reasoning benchmark (E-KAR). Our benchmark consists of 1,655 (in Chinese) and 1,251 (in English) problems sourced from the Civil Service Exams, which require intensive background knowledge to solve. More importantly, we design a free-text explanation scheme to explain whether an analogy should be drawn, and manually annotate them for each and every question and candidate answer. Empirical results suggest that this benchmark is very challenging for some state-of-the-art models for both explanation generation and analogical question answering tasks, which invites further research in this area. Project page of E-KAR can be found at https:// ekar-leaderboard.github.io.},
   eprint    = {https://openreview.net/forum?id=9kXOFRtrEj},
   url       = {https://ekar-leaderboard.github.io},
-  author+an =  {1=student; 10=highlight;}
+  author+an =	 {1=student; 10=highlight;}
 }
 @InProceedings{sun2022rethinking,
   author    = {Zewei Sun and Mingxuan Wang and Hao Zhou and Chengqi Zhao and Shujian Huang and Jiajun Chen and Lei Li},
@@ -69,7 +50,7 @@ title: "Hao Zhou: Publications"
   abstract  = {This paper does not aim at introducing a novel model for document-level neural machine translation. Instead, we head back to the original Transformer model and hope to answer the following question: Is the capacity of current models strong enough for document-level translation? Interestingly, we observe that the original Transformer with appropriate training techniques can achieve strong results for document translation, even with a length of 2000 words. We evaluate this model and several recent approaches on nine document-level datasets and two sentence-level datasets across six languages. Experiments show that document-level Transformer models outperforms sentence-level ones and many previous methods in a comprehensive set of metrics, including BLEU, four lexical indices, three newly proposed assistant linguistic indicators, and human evaluation. Our new datasets and evaluation scripts are in https://github. com/sunzewei2715/Doc2Doc_NMT.},
   code      = {https://github. com/sunzewei2715/Doc2Doc_NMT},
   eprint    = {https://openreview.net/forum?id=sU9fYzNZ3xX},
-  author+an =  {3=highlight}
+  author+an =	 {3=highlight}
 }
 @InProceedings{song2022switch,
   author    = {Zhenqiao Song and Hao Zhou and Lihua Qian and Jingjing Xu and Shanbo Cheng and Mingxuan Wang and Lei Li},
@@ -78,7 +59,7 @@ title: "Hao Zhou: Publications"
   year      = {2022},
   month     = apr,
   eprint    = {https://openreview.net/forum?id=5HvpvYd68b},
-  author+an =  {1=student; 2=highlight; 3=student}
+  author+an =	 {1=student; 2=highlight; 3=student}
 }
 @InProceedings{yang2022enhancing,
   author    = {Huiyun Yang and Huadong Chen and Hao Zhou and Lei Li},
@@ -87,7 +68,7 @@ title: "Hao Zhou: Publications"
   year      = {2022},
   month     = apr,
   eprint    = {https://openreview.net/forum?id=OjPmfr9GkVv},
-  author+an =  {1=student; 3=highlight}
+  author+an =	 {1=student; 3=highlight}
 }
 @InProceedings{huang2022non,
   author    = {Chenyang Huang and Hao Zhou and Osmar Zaiane and Lili Mou and Lei Li},
@@ -97,14 +78,14 @@ title: "Hao Zhou: Publications"
   month     = feb,
   abstract  = {How do we perform efficient inference while retaining high translation quality? Existing neural machine translation models, such as Transformer, achieve high performance, but they decode words one by one, which is inefficient. Recent non-autoregressive translation models speed up the inference, but their quality is still inferior. In this work, we propose DSLP, a highly efficient and high-performance model for machine translation. The key insight is to train a non-autoregressive Transformer with Deep Supervision and feed additional Layer-wise Predictions. We conducted extensive experiments on four translation tasks (both directions of WMT'14 EN-DE and WMT'16 EN-RO). Results show that our approach consistently improves the BLEU scores compared with respective base models. Specifically, our best variant outperforms the autoregressive model on three translation tasks, while being 14.8 times more efficient in inference.},
   eprint    = {https://arxiv.org/abs/2110.07515},
-  author+an =  {1=student; 2=highlight}
+  author+an =	 {1=student; 2=highlight}
 }
 @InProceedings{chen-gan2022aaai,
   title={Unsupervised Editing for Counterfactual Stories},
   author={Chen, Jiangjie and Gan, Chun and Chen, Sijie and Zhou, Hao and Xiao, Yanghua and Li, Lei},
   year={2022},
   booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
-  author+an =  {1=student; 2=student; 4=highlight}
+  author+an =	 {1=student; 2=student; 4=highlight}
 }
 
 @InProceedings{chen2022loren,
@@ -112,7 +93,7 @@ title: "Hao Zhou: Publications"
   author={Chen, Jiangjie and Bao, Qiaoben and Sun, Changzhi and Zhang, Xinbo and Chen, Jiaze and Zhou, Hao and Xiao, Yanghua and Li, Lei},
   year={2022},
   booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
-  author+an =  {1=student; 6=highlight}
+  author+an =	 {1=student; 6=highlight}
 }
 @InProceedings{zheng2021duplex,
   author    = {Zaixiang Zheng and Hao Zhou and Shujian Huang and Jiajun Chen and Jingjing Xu and Lei Li},
@@ -122,7 +103,7 @@ title: "Hao Zhou: Publications"
   month     = dec,
   abstract  = {In this work, we design a simple, direct, and fast framework for instance segmentation with strong performance. To this end, we propose a novel and effective approach, termed SOLOv2, following the principle of the SOLO method. First, our new framework is empowered by an efficient and holistic instance mask representation scheme, which dynamically segments each instance in the image, without resorting to bounding box detection. Specifically, the object mask generation is decoupled into a mask kernel prediction and mask feature learning, which are responsible for generating convolution kernels and the feature maps to be convolved with, respectively. Second, SOLOv2 significantly reduces inference overhead with our novel matrix non-maximum suppression (NMS) technique. Our Matrix NMS performs NMS with parallel matrix operations in one shot, and yields better results. We demonstrate that the proposed SOLOv2 achieves the state-of-the- art performance with high efficiency, making it suitable for both mobile and cloud applications. A light-weight version of SOLOv2 executes at 31.3 FPS and yields 37.1\% AP on COCO test-dev. Moreover, our state-of-the-art results in object detection (from our mask byproduct) and panoptic segmentation show the potential of SOLOv2 to serve as a new strong baseline for many instance-level recognition tasks.},
   eprint    = {https://arxiv.org/abs/2105.03458},
-  author+an =  {1=student; 2=highlight}
+  author+an =	 {1=student; 2=highlight}
 }
 @InProceedings{qian2021volctrans,
   author       = {Lihua Qian and Yi Zhou and Zaixiang Zheng and Yaoming Zhu and Zehui Lin and Jiangtao Feng and Shanbo Cheng and Lei Li and Mingxuan Wang and Hao Zhou},
@@ -133,7 +114,7 @@ title: "Hao Zhou: Publications"
   abstract     = {This paper describes the Volctrans' submission to the WMT21 news translation shared task for German->English translation. We build a parallel (i.e., non-autoregressive) translation system using the Glancing Transformer, which enables fast and accurate parallel decoding in contrast to the currently prevailing autoregressive models. To the best of our knowledge, this is the first parallel translation system that can be scaled to such a practical scenario like WMT competition. More importantly, our parallel translation system achieves the best BLEU score (35.0) on German->English translation task, outperforming all strong autoregressive counterparts.},
   entrysubtype = {workshop},
   eprint       = {https://arxiv.org/abs/2109.11247},
-  author+an =  {1=student; 2=student; 3=student; 10=highlight}
+  author+an =	 {1=student; 2=student; 3=student; 10=highlight}
 }
 @InProceedings{ru2021learning,
   author    = {Dongyu Ru and Changzhi Sun and Jiangtao Feng and Lin Qiu and Hao Zhou and Weinan Zhang and Yong Yu and Lei Li},
@@ -144,7 +125,7 @@ title: "Hao Zhou: Publications"
   abstract  = {Document-level relation extraction aims to identify relations between entities in a whole document. Prior efforts to capture long-range dependencies have relied heavily on implicitly powerful representations learned through (graph) neural networks, which makes the model less transparent. To tackle this challenge, in this paper, we propose LogiRE, a novel probabilistic model for document-level relation extraction by learning logic rules. LogiRE treats logic rules as latent variables and consists of two modules: a rule generator and a relation extractor. The rule generator is to generate logic rules potentially contributing to final predictions, and the relation extractor outputs final predictions based on the generated logic rules. Those two modules can be efficiently optimized with the expectation--maximization (EM) algorithm. By introducing logic rules into neural networks, LogiRE can explicitly capture long-range dependencies as well as enjoy better interpretation. Empirical results show that LogiRE significantly outperforms several strong baselines in terms of relation performance (∼1.8 F1 score) and logical consistency (over 3.3 logic score). Our code is available at https://github. com/rudongyu/LogiRE.},
   code      = {https://github.com/rudongyu/LogiRE},
   video     = {https://underline.io/lecture/38055-learning-logic-rules-for-document-level-relation-extraction},
-  author+an =  {5=highlight}
+  author+an =	 {5=highlight}
 }
 @InProceedings{wang2021cnewsum,
   author    = {Danqing Wang and Jiaze Chen and Xianze Wu and Hao Zhou and Lei Li},
@@ -156,7 +137,7 @@ title: "Hao Zhou: Publications"
   abstract  = {Automatic text summarization aims to produce a brief but crucial summary for the input documents. Both extractive and abstractive methods have witnessed great success in English datasets in recent years. However, there has been a minimal exploration of text summarization in Chinese, limited by the lack of large-scale datasets. In this paper, we present a large-scale Chinese news summarization dataset CNewSum, which consists of 304,307 documents and human-written summaries for the news feed. It has long documents with high-abstractive summaries, which can encourage document-level understanding and generation for current summarization models. An additional distinguishing feature of CNewSum is that its test set contains adequacy and deducibility annotations for the summaries. The adequacy level measures the degree of summary information covered by the document, and the deducibility indicates the reasoning ability the model needs to generate the summary. These annotations can help researchers analyze and target their model performance bottleneck. We examine recent methods on CNewSum and release our dataset to provide a solid testbed for automatic Chinese summarization research.},
   eprint    = {https://arxiv.org/abs/2110.10874},
   url       = {https://dqwang122.github.io/projects/CNewSum/},
-  author+an =  {4=highlight}
+  author+an =	 {4=highlight}
 }
 @InProceedings{shi-song2021ecml,
   author    = {Wenxian Shi and Yuxuan Song and Bohan Li and Hao Zhou and Lei Li},
@@ -164,7 +145,7 @@ title: "Hao Zhou: Publications"
   title     = {Follow Your Path: a Progressive Method for Knowledge Distillation},
   year      = {2021},
   month     = jul,
-  author+an =  {1=student; 2=student; 3=student; 4=highlight}
+  author+an =	 {1=student; 2=student; 3=student; 4=highlight}
 }
 @InProceedings{qian2021acl,
   author    = {Lihua Qian and Hao Zhou and Yu Bao and Mingxuan Wang and Lin Qiu and Weinan Zhang and Yong Yu and Lei Li},
@@ -172,7 +153,7 @@ title: "Hao Zhou: Publications"
   title     = {Glancing Transformer for Non-Autoregressive Neural Machine Translation},
   year      = {2021},
   month     = jul,
-  author+an =  {1=student; 2=highlight; 3=student}
+  author+an =	 {1=student; 2=highlight; 3=student}
 }
 @InProceedings{xu2021acl,
   author    = {Jingjing Xu and Hao Zhou and Chun Gan and Zaixiang Zheng and Lei Li},
@@ -180,7 +161,7 @@ title: "Hao Zhou: Publications"
   title     = {Vocabularization via Optimal Transport for Neural Machine Translation},
   year      = {2021},
   month     = jul,
-  author+an =  {1=student; 2=highlight; 3=student; 4=student}
+  author+an =	 {1=student; 2=highlight; 3=student; 4=student}
 }
 @InProceedings{wang2021acl,
   author    = {Yijun Wang and Changzhi Sun and Yuanbin Wu and Hao Zhou and Lei Li and Junchi Yan},
@@ -188,7 +169,7 @@ title: "Hao Zhou: Publications"
   title     = {A Unified Label Space for Entity Relation Extraction},
   year      = {2021},
   month     = jul,
-  author+an =  {4=highlight}
+  author+an =	 {4=highlight}
 }
 @InProceedings{sunzhang2021acl,
   author    = {Changzhi Sun and Xinbo Zhang and Jiangjie Chen and Chun Gan and Yuanbin Wu and Jiaze Chen and Hao Zhou and Lei Li},
@@ -196,7 +177,7 @@ title: "Hao Zhou: Publications"
   title     = {Probabilistic Graph Reasoning for Natural Proof Generation},
   year      = {2021},
   month     = jul,
-  author+an =  {7=highlight}
+  author+an =	 {7=highlight}
 }
 @InProceedings{wangdq2021acl,
   author    = {Danqing Wang and Jiaze Chen and Hao Zhou and Xipeng Qiu and Lei Li},
@@ -204,7 +185,7 @@ title: "Hao Zhou: Publications"
   title     = {Contrastive Aligned Joint Learning for Multilingual Summarization},
   year      = {2021},
   month     = jul,
-  author+an =  {3=highlight}
+  author+an =	 {3=highlight}
 }
 @InProceedings{wang2021enpar,
   author    = {Yijun Wang and Changzhi Sun and Yuanbin Wu and Hao Zhou and Lei Li and Junchi Yan},
@@ -212,7 +193,7 @@ title: "Hao Zhou: Publications"
   title     = {{ENPAR}: Enhancing Entity and Entity Pair Representations for Joint Entity Relation Extraction},
   year      = {2021},
   month     = apr,
-  author+an =  {4=highlight}
+  author+an =	 {4=highlight}
 }
 @InProceedings{yutongICLR,
   author    = {Yutong Xie and Chence Shi and Hao Zhou and Yuwei Yang and Weinan Zhang and Yong Yu and Lei Li},
@@ -220,7 +201,7 @@ title: "Hao Zhou: Publications"
   title     = {MARS: Markov Molecular Sampling for Multi-objective Drug Discovery},
   year      = {2021},
    month     = mar,
-  author+an =  {1=student; 2=student; 3=highlight}
+  author+an =	 {1=student; 2=student; 3=highlight}
 }
 @InProceedings{huang2021acmo,
   author    = {Xunpeng Huang and Runxin Xu and Hao Zhou and Zhe Wang and Zhengyang Liu and Lei Li},
@@ -228,7 +209,7 @@ title: "Hao Zhou: Publications"
   title     = {ACMo: Angle-Calibrated Moment Methods for Stochastic Optimization},
   year      = {2021},
   month     = feb,
-  author+an =  {1=student; 2=student; 3=highlight}
+  author+an =	 {1=student; 2=student; 3=highlight}
 }
 @InProceedings{dong2021listen,
   author    = {Qianqian Dong and Rong Ye and Mingxuan Wang and Hao Zhou and Shuang Xu and Bo Xu and Lei Li},
@@ -236,7 +217,7 @@ title: "Hao Zhou: Publications"
   title     = {Listen, Understand and Translate: Triple Supervision Decouples End-to-end Speech-to-text Translation},
   year      = {2021},
   month     = feb,
-  author+an =  {4=highlight}
+  author+an =	 {4=highlight}
 }
 @InProceedings{dong2021consecutive,
   author    = {Qianqian Dong and Mingxuan Wang and Hao Zhou and Shuang Xu and Bo Xu and Lei Li},
@@ -244,166 +225,353 @@ title: "Hao Zhou: Publications"
   title     = {Consecutive Decoding for Speech-to-text Translation},
   year      = {2021},
   month     = feb,
-  author+an =  {3=highlight}
+  author+an =	 {3=highlight}
 }
 @InProceedings{song2021triangular,
   author    = {Zhenqiao Song and Jiaze Chen and Hao Zhou and Lei Li},
   booktitle = {Proceedings of the 14th International Conference on Web Search and Data Mining (WSDM)},
   title     = {Triangular Bidword Generation for Sponsored Search Auction},
   year      = {2021},
-  author+an =  {1=student; 3=highlight}
+  author+an =	 {1=student; 3=highlight}
+}
+@InProceedings{li2020sentence,
+  author    = {Bohan Li and Hao Zhou and Junxian He and Mingxuan Wang and Yiming Yang and Lei Li},
+  booktitle = {the Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  title     = {On the Sentence Embeddings from Pre-trained Language Models},
+  year      = {2020},
+  month     = nov,
+  author+an =	 {1=student; 2=highlight}
+}
+@InProceedings{lin2020pre,
+  author    = {Zehui Lin and Xiao Pan and Mingxuan Wang and Xipeng Qiu and Jiangtao Feng and Hao Zhou and Lei Li},
+  booktitle = {the Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  title     = {Pre-training Multilingual Neural Machine Translation by Leveraging Alignment Information},
+  year      = {2020},
+  month     = nov,
+  author+an =	 {6=highlight}
+}
+@InProceedings{ru2020active,
+  author    = {Dongyu Ru and Jiangtao Feng and Lin Qiu and Hao Zhou and Mngxuan Wang and Weinan Zhang and Yong Yu and Lei Li},
+  booktitle = {the Conference on Empirical Methods in Natural Language Processing (EMNLP) - Findings},
+  title     = {Active Sentence Learning by Adversarial Uncertainty Sampling in Discrete Space},
+  year      = {2020},
+  month     = nov,
+  author+an =	 {1=student; 1=student; 3=student; 4=highlight}
+}
+@InProceedings{shi2020dispersed,
+  author    = {Wenxian Shi and Hao Zhou and Ning Miao and Lei Li},
+  booktitle = {Proceedings of the 37th International Conference on Machine learning (ICML)},
+  title     = {Dispersing Exponential Family Mixture {VAE}s for Interpretable Text Generation},
+  year      = {2020},
+  month     = jul,
+  author+an =	 {1=student; 2=highlight},
+}
+@InProceedings{ru2020quachie,
+  author       = {Dongyu Ru and Zhenghui Wang and Lin Qiu and Hao Zhou and Lei Li and Weinan Zhang and Yong Yu},
+  booktitle    = {the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) - System Demonstrations},
+  title        = {{QuAChIE}: Question Answering based {Chinese} Information Extraction System},
+  year         = {2020},
+  month        = jul,
+  entrysubtype = {demo},
+  author+an =	 {1=student; 2=student; 3=student; 4=highlight}
+}
+@InProceedings{miao2020do,
+  author    = {Ning Miao and Yuxuan Song and Hao Zhou and Lei Li},
+  booktitle = {the 58th Annual Meeting of the Association for Computational Linguistics (ACL) - short papers},
+  title     = {Do you have the right scissors? Tailoring Pre-trained Language Models via {Monte}-{Carlo} Methods},
+  year      = {2020},
+  month     = jul,
+  author+an =	 {1=student; 2=student; 3=highlight}
+}
+@inproceedings{liu-etal-2020-unsupervised,
+    title = "Unsupervised Paraphrasing by Simulated Annealing",
+    author = "Liu, Xianggen  and
+      Mou, Lili  and
+      Meng, Fandong  and
+      Zhou, Hao  and
+      Zhou, Jie  and
+      Song, Sen",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)",
+    month = jul,
+    year = "2020",
+    author+an =	 {1=student; 4=highlight}
+}
+@InProceedings{xu2020xiaomingbot,
+  author       = {Runxin Xu and Jun Cao and Mingxuan Wang and Jiaze Chen and Hao Zhou and Ying Zeng and Yuping Wang and Li Chen and Xiang Yin and Xijin Zhang and Songcheng Jiang and Yuxuan Wang and Lei Li},
+  booktitle    = {the 58th Annual Meeting of the Association for Computational Linguistics (ACL) - System Demonstrations},
+  title        = {Xiaomingbot: A Multilingual Robot News Reporter},
+  year         = {2020},
+  month        = jul,
+  author+an =	 {1=student; 5=highlight}
+}
+@InProceedings{song2020improving,
+  author    = {Yuxuan Song and Ning Miao and Hao Zhou and Lantao Yu and Mingxuan Wang and Lei Li},
+  booktitle = {The 23rd International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  title     = {Improving Maximum Likelihood Training for Text Generation with Density Ratio Estimation},
+  year      = {2020},
+  month     = aug,
+  author+an =	 {1=student; 2=student; 3=highlight}
+}
+@InProceedings{ye2020variational,
+  author    = {Rong Ye and Wenxian Shi and Hao Zhou and Zhongyu Wei and Lei Li},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  title     = {Variational Template Machine for Data-to-Text Generation},
+  year      = {2020},
+  month     = apr,
+  author+an =	 {1=student; 2=student; 3=highlight}
+}
+@InProceedings{zheng2020mirror,
+  author    = {Zaixiang Zheng and Hao Zhou and Shujian Huang and Lei Li and Xinyu Dai and Jiajun Chen},
+  booktitle = {International Conference on Learning Representations (ICLR) - Oral},
+  title     = {Mirror Generative Models for Neural Machine Translation},
+  year      = {2020},
+  month     = apr,
+  author+an =	 {1=student; 2=highlight}
+}
+@InProceedings{song2020infomax,
+  title={Infomax Neural Joint Source-Channel Coding via Adversarial Bit Flip},
+  author={Song, Yuxuan and Xu, Minkai and Yu, Lantao and Zhou, Hao and Shao, Shuo and Yu, Yong},
+  booktitle = {the 34th {AAAI} Conference on Artificial Intelligence ({AAAI})},
+  year={2020},
+  month     = feb,
+  author+an =	 {1=student; 2=student; 4=highlight}
+}
+@InProceedings{yang2020towards,
+  author    = {Jiacheng Yang and Mingxuan Wang and Hao Zhou and Chengqi Zhao and Weinan Zhang and Yong Yu and Lei Li},
+  booktitle = {the 34th {AAAI} Conference on Artificial Intelligence ({AAAI})},
+  title     = {Towards Making the Most of {BERT} in Neural Machine Translation},
+  year      = {2020},
+  month     = feb,
+  author+an =	 {3=highlight}
+  
+}
+@InProceedings{wu2020importance,
+  author    = {Qingyang Wu and Lei Li and Hao Zhou and Ying Zeng and Zhou Yu},
+  booktitle = {the 34th {AAAI} Conference on Artificial Intelligence (AAAI)},
+  title     = {Importance-Aware Learning for Neural Headline Editing},
+  year      = {2020},
+  month     = feb,
+  author+an =	 {1=student; 3=highlight}
+}
+@InProceedings{fu2019rethinking,
+  author    = {Fu, Yao and Zhou, Hao and Chen, Jiaze and Li, Lei},
+  booktitle = {the 12th International Conference on Natural Language Generation (INLG)},
+  title     = {Rethinking Text Attribute Transfer: A Lexical Analysis},
+  year      = {2019},
+  month     = oct,
+  author+an =	 {1=student; 2=highlight}
+}
+@InProceedings{miao2019kernelized,
+  author    = {Miao, Ning and Zhou, Hao and Zhao, Chengqi and Shi, Wenxian and Li, Lei},
+  booktitle = {the 33rd Conference on Neural Information Processing Systems (NeurIPS)},
+  title     = {Kernelized {Bayesian} Softmax for Text Generation},
+  year      = {2019},
+  month     = dec,
+  author+an =	 {1=student; 2=highlight}
+}
+@inproceedings{qiu-etal-2019-dynamically,
+    title = "Dynamically Fused Graph Network for Multi-hop Reasoning",
+    author = "Qiu, Lin  and
+      Xiao, Yunxuan  and
+      Qu, Yanru  and
+      Zhou, Hao  and
+      Li, Lei  and
+      Zhang, Weinan  and
+      Yu, Yong",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)",
+    month = jul,
+    year = "2019",
+    author+an =	 {1=student; 2=student; 3=student; 4=highlight}
+}
+@inproceedings{zhang-etal-2019-generating-fluent,
+    title = "Generating Fluent Adversarial Examples for Natural Languages",
+    author = "Zhang, Huangzhao  and
+      Zhou, Hao  and
+      Miao, Ning  and
+      Li, Lei",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL) - short papers",
+    month = jul,
+    year = "2019",
+    author+an =	 {1=student; 3=student; 2=highlight}
+}
+@inproceedings{bao-etal-2019-generating,
+    title = "Generating Sentences from Disentangled Syntactic and Semantic Spaces",
+    author = "Bao, Yu  and
+      Zhou, Hao  and
+      Huang, Shujian  and
+      Li, Lei  and
+      Mou, Lili  and
+      Vechtomova, Olga  and
+      Dai, Xin-yu  and
+      Chen, Jiajun",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)",
+    month = jul,
+    year = "2019",
+    author+an =	 {1=student; 2=highlight}
+}
+@inproceedings{wei-etal-2019-imitation,
+    title = "Imitation Learning for Non-Autoregressive Neural Machine Translation",
+    author = "Wei, Bingzhen  and
+      Wang, Mingxuan  and
+      Zhou, Hao  and
+      Lin, Junyang  and
+      Sun, Xu",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)",
+    month = jul,
+    year = "2019",
+    author+an =	 {3=highlight}
+}
+@inproceedings{ijcai2019-0730,
+  title     = {Correct-and-Memorize: Learning to Translate from Interactive Revisions},
+  author    = {Weng, Rongxiang and Zhou, Hao and Huang, Shujian and Li, Lei and Xia, Yifan and Chen, Jiajun},
+  booktitle = {Proceedings of the Twenty-Eighth International Joint Conference on
+               Artificial Intelligence (IJCAI)},
+  year      = {2019},
+  month     = {jul},
+  author+an =	 {1=student; 2=highlight}
 }
 
+@InProceedings{sun2019graspsnooker,
+  author       = {Sun, Zhaoyue and Chen, Jiaze and Zhou, Hao and Zhou, Deyu and Li, Lei and Jiang, Mingmin},
+  booktitle    = {the 28th International Joint Conference on Artificial Intelligence (IJCAI)  - System Demonstrations},
+  title        = {{GraspSnooker}: Automatic {Chinese} Commentary Generation for Snooker Videos},
+  year         = {2019},
+  month        = aug,
+  author+an =	 {1=student; 3=highlight}
+}
+@inproceedings{bahuleyan-etal-2019-stochastic,
+    title = "Stochastic {W}asserstein Autoencoder for Probabilistic Sentence Generation",
+    author = "Bahuleyan, Hareesh  and
+      Mou, Lili  and
+      Zhou, Hao  and
+      Vechtomova, Olga",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics (NAACL)",
+    month = jun,
+    year = "2019",
+    author+an =	 {3=highlight}
+}
+@inproceedings{wei2019neural,
+  title={Why do neural dialog systems generate short and meaningless replies? a comparison between dialog and translation},
+  author={Wei, Bolin and Lu, Shuai and Mou, Lili and Zhou, Hao and Poupart, Pascal and Li, Ge and Jin, Zhi},
+  booktitle={International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year={2019},
+  author+an =	 {4=highlight}
+}
+@inproceedings{miao2019cgmh,
+  title={Cgmh: Constrained sentence generation by metropolis-hastings sampling},
+  author={Miao, Ning and Zhou, Hao and Mou, Lili and Yan, Rui and Li, Lei},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
+  year={2019},
+  author+an =	 {1=student; 2=highlight}
+}
+@inproceedings{NEURIPS2018_734e6bfc,
+ author = {Cao, Wei and Wang, Dong and Li, Jian and Zhou, Hao and Li, Lei and Li, Yitan},
+ booktitle = {Advances in Neural Information Processing Systems (NIPS)},
+ title = {BRITS: Bidirectional Recurrent Imputation for Time Series},
+ year = {2018},
+ author+an =	 {1=student; 4=highlight}
+}
+@inproceedings{shi2018tree,
+    title={On Tree-Based Neural Sentence Modeling},
+    author={Shi, Haoyue and Zhou, Hao and Chen, Jiaze and Li, Lei},
+    booktitle={Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+    year={2018},
+    author+an =	 {1=student; 2=highlight}
+}
+@article{zheng-etal-2018-modeling,
+    title = "Modeling Past and Future for Neural Machine Translation",
+    author = "Zheng, Zaixiang  and
+      Zhou, Hao  and
+      Huang, Shujian  and
+      Mou, Lili  and
+      Dai, Xinyu  and
+      Chen, Jiajun  and
+      Tu, Zhaopeng",
+    journal = "Transactions of the Association for Computational Linguistics (TACL)",
+    year = "2018",
+    author+an =	 {1=student; 2=highlight}
+}
+@inproceedings{zhou-etal-2017-word,
+    title = "Word-Context Character Embeddings for {C}hinese Word Segmentation",
+    author = "Zhou, Hao  and
+      Yu, Zhenting  and
+      Zhang, Yue  and
+      Huang, Shujian  and
+      Dai, Xinyu  and
+      Chen, Jiajun",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = sep,
+    year = "2017",
+    author+an =	 {1=highlight}
+}
+@inproceedings{zhou-etal-2017-chunk,
+    title = "Chunk-Based Bi-Scale Decoder for Neural Machine Translation",
+    author = "Zhou, Hao  and
+      Tu, Zhaopeng  and
+      Huang, Shujian  and
+      Liu, Xiaohua  and
+      Li, Hang  and
+      Chen, Jiajun",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (ACL) - short papers",
+    month = jul,
+    year = "2017",
+    author+an =	 {1=highlight}
+}
+@inproceedings{zhou-etal-2016-search,
+    title = "A Search-Based Dynamic Reranking Model for Dependency Parsing",
+    author = "Zhou, Hao  and
+      Zhang, Yue  and
+      Huang, Shujian  and
+      Zhou, Junsheng  and
+      Dai, Xin-Yu  and
+      Chen, Jiajun",
+    booktitle = "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (ACL)",
+    month = aug,
+    year = "2016",
+    author+an =	 {1=highlight}
+}
+@InProceedings{ZHOU16.150,
+  author = {Hao Zhou and Yue Zhang and Shujian Huang and Xin-Yu Dai and Jiajun Chen},
+  title = {Evaluating a Deterministic Shift-Reduce Neural Parser for Constituent Parsing},
+  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC)},
+  year = {2016},
+  month = {may},
+  author+an =	 {1=highlight}
+ }
+@article{zhou15-jair,
+    title = "A Neural Probabilistic Structured-Prediction Method for Transition-Based Natural Language Processing",
+    author = "Zhou, Hao  and
+      Zhang, Yue  and
+      Chuan, Chen and
+      Huang, Shujian and
+      Xinyu, Dai  and
+      Chen, Jiajun",
+    journal = "Journal of Artificial Intelligence Research (JAIR)",
+    year = "2016",
+    author+an =	 {1=highlight}
+}
 
-    </textarea>
-    
-    <script>
-		$(function() {
-		  $("#Fontselector").on("change",function() {
-		    var font = $("#Fontselector option:selected").text();
-		    console.log(font);
-		
-		    $('.title.fonters').each(function() {
-		    	$(this).css("font-family",font);
-		    });
-		  }); 
-		});   
-		function reset() {
-			$("select").each(function () {
-			  localStorage.setItem($(this).attr("id"),"");
-			  $(this).val("");
-			}); 
-			$("#searchbar").val("");
-			$("#searchbar").trigger('change');
-		}
-    </script>
-    
-    <style>
-	    html,body,span,h1 {
-	    	font-family: "Times New Roman", Times, serif;
-	    	font-size: 17px;
-	    }
-	    bibtex { display: none; }
-	    .searchbar { margin-left:0px;}
-	    #bibtex_errors { margin-top:10px; color: red;}
-	    h1.header {margin-left:8px;}
-	    h1.YEAR { font-size: 17px; font-weight: bold; display: inline; margin-left:8px;}
-      [class="Hao Zhou"] {
-        font-weight: bold;
-      }
-    </style>
-    
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    
-  </head>
-<body>
-<a name="top"></a>
-<h1 class="header">Hao Zhou's Publications</h1>
-<div class="container-fluid">
-	<div class="searchbar">
-		<div style="float:left;">
-			<button type="button" class="btn btn-default" onclick="reset()">Reset</button>
-		</div>
-		<div style="float:left;">
-			<select id="authorselect" class="btn bibtex_search bibtex_author" style="border: 1px solid lightgrey;" search="author">
-			  <option value="">Search Author</option>
-			</select>
-		</div>
-		<div style="float:left;">
-			<select id="topicselect" class="btn bibtex_search" style="border: 1px solid lightgrey;">
-			  <option value="">Search Topic</option>
-			  <!-- Add topic values here -->
-			  <option value="Structured-Prediction">Structured-Prediction</option>
-        <option value="Text Generation">Text Generation</option>
-        <option value="Parsing">Parsing</option>
-        <option value="Drug Discovery">Drug Discovery</option>
-        <option value="Representation Learning">Representation Learning</option>
-        <option value="Non-Autoregressive Generation">Non-Autoregressive Generation</option>
-			</select>
-		</div>
-		<div style="float:left;">
-			<input type="text" class="bibtex_search form-control" id="searchbar" placeholder="Search publications">
-		</div>
-	</div>
-</div>
-
-<div class="bibtex_structure">
-  <div class="group year" extra="DESC string">
-      <a href="#top" style="display: inline"><em>(Top of the page)</em></a>
-      <div style="padding-bottom:10px;"></div>
-      <div class="sort journal" extra="DESC string">
-        <div class="templates"></div>
-      </div>
-  </div>
-</div>
-
-<div id="bibtex_display">
-  
-  <div class="bibtex_template" style="display: none;"><li class="if BIBTEXTYPEKEY==ARTICLE || BIBTEXTYPEKEY==INPROCEEDINGS || BIBTEXTYPEKEY==MISC || BIBTEXTYPEKEY==PHDTHESIS || BIBTEXTYPEKEY==MASTERTHESIS || BIBTEXTYPEKEY==BACHELORSTHESIS || BIBTEXTYPEKEY==TECHREPORT || BIBTEXTYPEKEY==BOOK || BIBTEXTYPEKEY==UNPUBLISHED">
-            <span class="if title"><a class="bibtexVar" href="pubs/+BIBTEXKEY+.pdf"
-                extra="BIBTEXKEY"><span
-                  class="title"></span></a>,</span>
-            <div class="if author"><span class="author" conjunction=", and"><span class="first"></span> <span class="last"></span></span>.</div>
-            <div> <span class="if journal"> <em> <span class="journal"></span>
-                </em>, </span> <span class="if booktitle">In <em> <span class="booktitle">
-                  </span> </em>, </span> <span class="if editor"> <span class="editor"></span>
-                (editors), </span> <span class="if publisher"> <em> <span class="publisher"></span>
-                </em>, </span> <span class="if BIBTEXTYPEKEY==@TECHREPORT">
-                Technical report <span class="number"></span>,</span> <span class="if BIBTEXTYPEKEY==@PHDTHESIS">
-                Ph.D. Dissertation, </span> <span class="if school"> <span class="school"></span>,
-              </span> <span class="if howpublished"> <span class="howpublished"></span>,
-              </span> <span class="if institution"> <span class="institution"></span>,
-              </span> <span class="if address"> <span class="address"></span>,
-              </span> <span class="if volume"> <span class="volume"></span>, </span>
-              <span class="if journal number">( <span class="number"></span>),
-              </span> <span class="if pages"> pages <span class="pages"></span>,</span>
-              <span class="if year"><span class="year"></span>.</span> <span class="if addendum">(<span class="addendum"></span>)</span></div>
-            <div>
-              <span class="if comment"><div><span class="comment"></span></div></span>
-              <a class="bibtexVar label label-success" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+"
-                aria-expanded="false"
-                aria-controls="bib+BIBTEXKEY+"
-                extra="BIBTEXKEY">Bib</a>
-              <span class="if eprint"><a class="bibtexVar label label-primary" href="+EPRINT+" role="button" extra="eprint">Eprint</a></span>
-              <span class="if url"><a class="bibtexVar label label-warning" href="+URL+" role="button" extra="url">URL</a></span>
-              <span class="if software"><a class="bibtexVar label label-danger" href="+SOFTWARE+" role="button"
-                  extra="software">Software</a></span>
-              <span class="if code"><a class="bibtexVar label label-danger" href="+CODE+" role="button" extra="code">Code</a></span>
-              <span class="if slides"><a class="bibtexVar label label-warning" href="+SLIDES+" role="button" extra="slides">Slides</a></span>
-              <span class="if abstract">
-              <a class="bibtexVar label label-default" role="button" data-toggle="collapse" href="#abs+BIBTEXKEY+"
-aria-expanded="false"
-aria-controls="abs+BIBTEXKEY+"
-extra="BIBTEXKEY">Abstract</a>
-              </span>
-              <span class="if doi"><a class="bibtexVar label label-default" href="+DOI+" role="button" extra="doi">DOI</a></span>
-              <span class="if video"><a class="bibtexVar label label-info" href="+VIDEO+" role="button" extra="video">
-                <div class="icon"><div class="videoCam"></div></div>
-              </a></span>
-            </div>
-            <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
-              <div>
-                <pre><span class="bibtexraw noread raw"></span></pre>
-                <!-- <pre><span class="bibtextypekey raw" style="text-transform:lowercase"></span>{<span class="bibtexkey raw"></span>,
-  author = <span class="author raw"></span>,  title = "<span class="title raw"></span>",<span class="if booktitle">  booktitle = "<span class="booktitle raw"></span>",</span><span class="if journal">  journal = "<span class="journal raw"></span>",</span><span class="if publisher">
-  publisher = "<span class="publisher raw"></span>",</span><span class="if school">  school = "<span class="school raw"></span>",</span>  year = <span class="year raw"></span>,<span class="if volume">  volume = "<span class="volume raw"></span>",</span><span class="if number">
-  number = "<span class="number raw"></span>",</span><span class="if pages">  pages = "<span class="pages raw"></span>",</span><span class="if edition">  edition = "<span class="edition raw"></span>",</span>}</pre> -->
-              </div>
-            </div>
-            <div class="bibtexVar collapse" id="abs+BIBTEXKEY+" extra="BIBTEXKEY">
-              <div>
-                <pre><span class="abstract"></span></pre>
-              </div>
-            </div>
-            <div style="display:none"> <span class="bibtextype"></span></div>
-            <div style="display:none"> <span class="if topic"> <span class="topic"></span></span></div>
-          </li></div>
-      </div>
-    </div>
-  
-</div>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</body>
-</html>
+@article{zhou15-talip,
+    title = "Enhancing Shift-Reduce Constituent Parsing with Action N-Gram Model",
+    author = "Zhou, Hao  and
+      Huang, Shujian  and
+      Zhou, Junsheng  and
+      Zhang, Yue  and
+      Chen, Huadong  and
+      Dai, Xinyu  and
+      Chen, Chuan  and
+      Chen, Jiajun",
+    journal = "ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)",
+    year = "2015",
+    author+an =	 {1=highlight}
+}
+@inproceedings{zhou-etal-2015-neural,
+    title = "A Neural Probabilistic Structured-Prediction Model for Transition-Based Dependency Parsing",
+    author = "Zhou, Hao  and
+      Zhang, Yue  and
+      Huang, Shujian  and
+      Chen, Jiajun",
+    booktitle = "Proceedings of the 53th Annual Meeting of the Association for Computational Linguistics (ACL)",
+    year = "2015",
+    author+an =	 {1=highlight}
+}
