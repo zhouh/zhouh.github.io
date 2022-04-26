@@ -1,0 +1,93 @@
+@InProceedings{bao2022latent,
+  author    = {Yu Bao and Hao Zhou and Shujian Huang and Dongqi Wang and Lihua Qian and Xinyu Dai and Jiajun Chen and Lei Li},
+  booktitle = {the 60th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  title     = {latent-{GLAT}: Glancing at Latent Variables for Parallel Text Generation},
+  year      = {2022},
+  month     = may,
+  abstract  = {Recently, parallel text generation has received widespread attention due to its success in generation efficiency. Although many advanced techniques are proposed to improve its generation quality, they still need the help of an autoregressive model for training to overcome the one-to-many multi-modal phenomenon in the dataset, limiting their applications. In this paper, we propose latent-GLAT, which employs the discrete latent variables to capture word categorical information and invoke an advanced curriculum learning technique, alleviating the multi-modality problem. Experiment results show that our method outperforms strong baselines without the help of an autoregressive model, which further broadens the application scenarios of the parallel decoding paradigm.},
+  code      = {https://github.com/baoy-nlp/Latent-GLAT},
+  paper    = {https://openreview.net/forum?id=y4xCe0MSoWx},
+  author+an =	 {1=student; 2=highlight},
+  student = {1}
+}
+
+@InProceedings{song2022switch,
+  author    = {Zhenqiao Song and Hao Zhou and Lihua Qian and Jingjing Xu and Shanbo Cheng and Mingxuan Wang and Lei Li},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  title     = {{switch-GLAT}: Multilingual Parallel Machine Translation via Code-switch Decoder},
+  year      = {2022},
+  month     = apr,
+  paper    = {https://openreview.net/forum?id=5HvpvYd68b},
+  abstract  = {Multilingual machine translation aims to develop a single model for multiple language directions. However, existing multilingual models based on Transformer are limited in terms of both translation performance and inference speed. In this paper, we propose switch-GLAT, a non-autoregressive multilingual machine translation model with a code-switch decoder. It can generate contextual code-switched translations for a given source sentence, and perform code-switch back-translation, greatly boosting multilingual translation performance. In addition, its inference is highly efficient thanks to its parallel decoder. Experiments show that our proposed switch-GLAT outperform the multilingual Transformer with as much as 1.16 BLEU improvement and 6.6x faster decoding speed in inference.},
+  author+an =  {1=student; 2=highlight; 3=student},
+  student = {1}
+}
+@InProceedings{huang2022non,
+  author    = {Chenyang Huang and Hao Zhou and Osmar Zaiane and Lili Mou and Lei Li},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
+  title     = {Non-Autoregressive Translation with Layer-Wise Prediction and Deep Supervision},
+  year      = {2022},
+  month     = feb,
+  abstract  = {How do we perform efficient inference while retaining high translation quality? Existing neural machine translation models, such as Transformer, achieve high performance, but they decode words one by one, which is inefficient. Recent non-autoregressive translation models speed up the inference, but their quality is still inferior. In this work, we propose DSLP, a highly efficient and high-performance model for machine translation. The key insight is to train a non-autoregressive Transformer with Deep Supervision and feed additional Layer-wise Predictions. We conducted extensive experiments on four translation tasks (both directions of WMT'14 EN-DE and WMT'16 EN-RO). Results show that our approach consistently improves the BLEU scores compared with respective base models. Specifically, our best variant outperforms the autoregressive model on three translation tasks, while being 14.8 times more efficient in inference.},
+  paper    = {https://arxiv.org/abs/2110.07515},
+  code = {https://github.com/chenyangh/DSLP},
+  author+an =	 {1=student; 2=highlight},
+  student = {1}
+}
+@InProceedings{zheng2021duplex,
+  author    = {Zaixiang Zheng and Hao Zhou and Shujian Huang and Jiajun Chen and Jingjing Xu and Lei Li},
+  booktitle = {the 35th Conference on Neural Information Processing Systems (NeurIPS)},
+  title     = {Duplex Sequence-to-Sequence Learning for Reversible Machine Translation},
+  year      = {2021},
+  month     = dec,
+  abstract  = {In this work, we design a simple, direct, and fast framework for instance segmentation with strong performance. To this end, we propose a novel and effective approach, termed SOLOv2, following the principle of the SOLO method. First, our new framework is empowered by an efficient and holistic instance mask representation scheme, which dynamically segments each instance in the image, without resorting to bounding box detection. Specifically, the object mask generation is decoupled into a mask kernel prediction and mask feature learning, which are responsible for generating convolution kernels and the feature maps to be convolved with, respectively. Second, SOLOv2 significantly reduces inference overhead with our novel matrix non-maximum suppression (NMS) technique. Our Matrix NMS performs NMS with parallel matrix operations in one shot, and yields better results. We demonstrate that the proposed SOLOv2 achieves the state-of-the- art performance with high efficiency, making it suitable for both mobile and cloud applications. A light-weight version of SOLOv2 executes at 31.3 FPS and yields 37.1\% AP on COCO test-dev. Moreover, our state-of-the-art results in object detection (from our mask byproduct) and panoptic segmentation show the potential of SOLOv2 to serve as a new strong baseline for many instance-level recognition tasks.},
+  paper    = {https://arxiv.org/abs/2105.03458},
+  author+an =	 {1=student; 2=highlight},
+  student = {1}
+
+}
+@InProceedings{qian2021volctrans,
+  author       = {Lihua Qian and Yi Zhou and Zaixiang Zheng and Yaoming Zhu and Zehui Lin and Jiangtao Feng and Shanbo Cheng and Lei Li and Mingxuan Wang and Hao Zhou},
+  booktitle    = {Sixth Conference on Machine Translation (WMT21)},
+  title        = {The {Volctrans} {GLAT} System: Non-autoregressive Translation Meets {WMT21}},
+  year         = {2021},
+  month        = nov,
+  abstract     = {This paper describes the Volctrans' submission to the WMT21 news translation shared task for German->English translation. We build a parallel (i.e., non-autoregressive) translation system using the Glancing Transformer, which enables fast and accurate parallel decoding in contrast to the currently prevailing autoregressive models. To the best of our knowledge, this is the first parallel translation system that can be scaled to such a practical scenario like WMT competition. More importantly, our parallel translation system achieves the best BLEU score (35.0) on German->English translation task, outperforming all strong autoregressive counterparts.},
+  entrysubtype = {workshop},
+  paper       = {https://arxiv.org/abs/2109.11247},
+  code      = {https://github.com/bytedance/ParaGen},
+  author+an =	 {1=student; 2=student; 3=student; 10=highlight},
+  student = {1}
+}
+@InProceedings{qian2021acl,
+  author    = {Lihua Qian and Hao Zhou and Yu Bao and Mingxuan Wang and Lin Qiu and Weinan Zhang and Yong Yu and Lei Li},
+  booktitle = {the 59th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  title     = {Glancing Transformer for Non-Autoregressive Neural Machine Translation},
+  year      = {2021},
+  month     = jul,
+  abstract  = {Recent work on non-autoregressive neural machine translation (NAT) aims at improving the efficiency by parallel decoding without sacrificing the quality. However, existing NAT methods are either inferior to Transformer or require multiple decoding passes, leading to reduced speedup. We propose the Glancing Language Model (GLM), a method to learn word interdependency for single-pass parallel generation models. With GLM, we develop Glancing Transformer (GLAT) for machine translation. With only single-pass parallel decoding, GLAT is able to generate high-quality translation with 8-15 times speedup. Experiments on multiple WMT language directions show that GLAT outperforms all previous single pass non-autoregressive methods, and is nearly comparable to Transformer, reducing the gap to 0.25-0.9 BLEU points.},
+  paper    = {https://arxiv.org/abs/2008.07905},
+  code      = {https://github.com/FLC777/GLAT},
+  author+an =	 {1=student; 2=highlight; 3=student},
+  student = {1}
+}
+@inproceedings{wei-etal-2019-imitation,
+    title = "Imitation Learning for Non-Autoregressive Neural Machine Translation",
+    author = "Wei, Bingzhen  and
+      Wang, Mingxuan  and
+      Zhou, Hao  and
+      Lin, Junyang  and
+      Sun, Xu",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)",
+    month = jul,
+    year = "2019",
+  paper      = {https://www.aclweb.org/anthology/P19-1125},
+    author+an =	 {3=highlight}
+}
+@Unpublished{baoPreprintpnat,
+  author = {Yu Bao and Hao Zhou and Jiangtao Feng and Mingxuan Wang and Shujian Huang and Jiajun Chen and Lei Li},
+  title  = {{PNAT}: Non-autoregressive Transformer by Position Learning},
+  year   = {Preprint},
+  paper = {https://arxiv.org/abs/1911.10677},
+  student = {1}
+}
