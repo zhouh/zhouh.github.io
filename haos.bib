@@ -1,3 +1,26 @@
+@InProceedings{huang2022icmla,
+  author    = {Fei Huang and Hao Zhou and Yang Liu and Hang Li and Minlie Huang},
+  booktitle = {the 39th International Conference on Machine Learning (ICML)},
+  title     = {Directed Acyclic Transformer for Non-Autoregressive Machine Translation},
+  year      = {2022},
+  month     = july,
+  abstract  = {Non-autoregressive Transformers (NATs) significantly reduce the decoding latency by generating all tokens in parallel. However, such independent predictions prevent NATs from capturing the dependencies between the tokens for generating multiple possible translations. In this paper, we propose Directed Acyclic Transfomer (DA-Transformer), which represents the hidden states in a Directed Acyclic Graph (DAG), where each path of the DAG corresponds to a specific translation. The whole DAG simultaneously captures multiple translations and facilitates fast predictions in a non-autoregressive fashion. Experiments on the raw training data of WMT benchmark show that DA-Transformer substantially outperforms previous NATs by about 3 BLEU on average, which is the first NAT model that achieves competitive results with autoregressive Transformers without relying on knowledge distillation.},
+  eprint    = {https://arxiv.org/abs/2205.07459},
+  author+an =  {1=student; 2=highlight},
+  student = {1}
+}
+
+@InProceedings{huang2022icmlb,
+  author    = {Fei Huang and Tianhua Tao and Hao Zhou and Lei Li and Minlie Huang},
+  booktitle = {the 39th International Conference on Machine Learning (ICML)},
+  title     = {On the Learning of Non-Autoregressive Transformers},
+  year      = {2022},
+  month     = july,
+  abstract  = {Non-autoregressive Transformer (NAT) is a family of text generation models, which aims to reduce the decoding latency by predicting the whole sentences in parallel. However, such latency reduction sacrifices the ability to capture left-to-right dependencies, thereby making NAT learning very challenging. In this paper, we present theoretical and empirical analyses to reveal the challenges of NAT learning and propose a unified perspective to understand existing successes. First, we show that simply training NAT by maximizing the likelihood can lead to an approximation of marginal distributions but drops all dependencies between tokens, where the dropped information can be measured by the dataset's conditional total correlation. Second, we formalize many previous objectives in a unified framework and show that their success can be concluded as maximizing the likelihood on a proxy distribution, leading to a reduced information loss. Empirical studies show that our perspective can explain the phenomena in NAT learning and guide the design of new training methods.},
+  eprint    = {https://arxiv.org/abs/2206.05975},
+  author+an =  {1=student; 3=highlight},
+  student = {1}
+}
 @InProceedings{chen2022mtg,
   author    = {Chen, Yiran and Song, Zhenqiao and Wu, Xianze and Wang, Danqing and Xu, Jingjing and Chen, Jiaze and Zhou, Hao and Li, Lei},
   booktitle = {Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT Findings)},
