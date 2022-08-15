@@ -1,4 +1,16 @@
 @InProceedings{huang2022icmla,
+  author    = {Xianze Wu, Zaixiang Zheng, Hao Zhou, Yong Yu},
+  booktitle = {the 15th International Natural Language Generation Conference (INLG),},
+  title     = {LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning},
+  year      = {2022},
+  month     = jul,
+  abstract  = {Multilingual language pretraining enables possibilities of transferring task knowledge learned from a rich-resource source language to the other, particularly favoring those low-resource languages with few or no task annotated data. However, knowledge about language and tasks encoded is strongly entangled in multilingual neural representations, thereby the learned task knowledge falsely correlated to the source language, falling short of cross-lingual transferability. In this paper, we present a novel language-agnostic finetuning (LAFT) to facilitate zero-resource cross-lingual transfer for text generation. LAFT performs language-agnostic task acquisition to isolate task learning completely from the source language, and then language specification for better generation for specified languages. Experiments demonstrate that the proposed approach facilitates a better and parameter-efficient transferability on two text generation tasks.},
+  eprint    = {https://inlgmeeting.github.io/poster_paper25.html},
+  note  = {Best Short },
+  author+an =  {3=highlight},
+  student = {1}
+}
+@InProceedings{huang2022icmla,
   author    = {Fei Huang and Hao Zhou and Yang Liu and Hang Li and Minlie Huang},
   booktitle = {the 39th International Conference on Machine Learning (ICML)},
   title     = {Directed Acyclic Transformer for Non-Autoregressive Machine Translation},
@@ -6,8 +18,7 @@
   month     = jul,
   abstract  = {Non-autoregressive Transformers (NATs) significantly reduce the decoding latency by generating all tokens in parallel. However, such independent predictions prevent NATs from capturing the dependencies between the tokens for generating multiple possible translations. In this paper, we propose Directed Acyclic Transfomer (DA-Transformer), which represents the hidden states in a Directed Acyclic Graph (DAG), where each path of the DAG corresponds to a specific translation. The whole DAG simultaneously captures multiple translations and facilitates fast predictions in a non-autoregressive fashion. Experiments on the raw training data of WMT benchmark show that DA-Transformer substantially outperforms previous NATs by about 3 BLEU on average, which is the first NAT model that achieves competitive results with autoregressive Transformers without relying on knowledge distillation.},
   eprint    = {https://arxiv.org/abs/2205.07459},
-  author+an =  {1=student; 2=highlight},
-  student = {1}
+  author+an =  {1=student; 2=highlight}
 }
 
 @InProceedings{huang2022icmlb,
@@ -153,6 +164,7 @@
   month        = nov,
   abstract     = {This paper describes the Volctrans' submission to the WMT21 news translation shared task for German->English translation. We build a parallel (i.e., non-autoregressive) translation system using the Glancing Transformer, which enables fast and accurate parallel decoding in contrast to the currently prevailing autoregressive models. To the best of our knowledge, this is the first parallel translation system that can be scaled to such a practical scenario like WMT competition. More importantly, our parallel translation system achieves the best BLEU score (35.0) on German->English translation task, outperforming all strong autoregressive counterparts.},
   entrysubtype = {workshop},
+  note  = {Ranked #1 on WMT DE-EN task, outperforming autoregressive models with our parallel GLAT},
   eprint       = {https://arxiv.org/abs/2109.11247},
   code      = {https://github.com/bytedance/ParaGen},
   author+an =	 {1=student; 2=student; 3=student; 10=highlight},
