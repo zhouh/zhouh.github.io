@@ -1,35 +1,4 @@
-@InProceedings{wang2022nips,
-  author    = {Lihao Wang, Yi Zhou, Yiqun Wang, Xiaoqing Zheng, Xuanjing Huang, Hao Zhou},
-  booktitle = {the 36th Conference on Neural Information Processing Systems (NeurPS)},
-  title     = {Regularized Molecular Conformation Fields},
-  year      = {2022},
-  month     = nov,
-  abstract  = {Predicting energetically favorable 3-dimensional conformations of organic molecules from
-molecular graph plays a fundamental role in computer-aided drug discovery research.
-However, effectively exploring the high-dimensional conformation space to identify (meta) stable conformers is anything but trivial.In this work, we introduce RMCF, a novel framework to generate a diverse set of low-energy molecular conformations through sampling from a regularized molecular conformation field. We develop a data-driven molecular segmentation algorithm to automatically partition each molecule into several structural building blocks to reduce the modeling degrees of freedom. Then, we employ a Markov Random Field to learn the joint probability distribution of fragment configurations and inter-fragment dihedral angles, which enables us to sample from different low-energy regions of a conformation space. Our model constantly outperforms state-of-the-art models for the conformation generation task on the GEOM-Drugs dataset. We attribute the success of RMCF to modeling in a regularized feature space and learning a global fragment configuration distribution for effective sampling.
-The proposed method could be generalized to deal with larger biomolecular systems.},
-  author+an =  {1=student; 6=highlight}
-}
-@InProceedings{long2022nips,
-  author    = {Siyu Long, Yi Zhou, Xinyu Dai, Hao Zhou},
-  booktitle = {the 36th Conference on Neural Information Processing Systems (NeurPS)},
-  title     = {Zero-Shot 3D Drug Design by Sketching and Generating},
-  year      = {2022},
-  month     = nov,
-  abstract  = {Drug design is a crucial step in the drug discovery cycle. Recently, various deep learning-based methods design drugs by generating novel molecules from scratch, avoiding traversing large-scale drug libraries. However, they depend on scarce experimental data or time-consuming docking simulation, leading to overfitting issues with limited training data and slow generation speed. In this study, we propose the zero-shot drug design method DESERT (Drug design by Sketching and generating). Specifically, DESERT splits the design process into two stages: sketching and generating, and bridges them with the molecular shape. The two-stage fashion enables our method to utilize the large-scale molecular database to reduce the need for experimental data and docking simulation. Experiments show that DESERT achieves a new state-of-the-art at a fast speed.},
-  author+an =  {1=student; 4=highlight}
-}
-@InProceedings{wu2022inlg,
-  author    = {Xianze Wu, Zaixiang Zheng, Hao Zhou, Yong Yu},
-  booktitle = {the 15th International Natural Language Generation Conference (INLG)},
-  title     = {LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning},
-  year      = {2022},
-  month     = jul,
-  abstract  = {Multilingual language pretraining enables possibilities of transferring task knowledge learned from a rich-resource source language to the other, particularly favoring those low-resource languages with few or no task annotated data. However, knowledge about language and tasks encoded is strongly entangled in multilingual neural representations, thereby the learned task knowledge falsely correlated to the source language, falling short of cross-lingual transferability. In this paper, we present a novel language-agnostic finetuning (LAFT) to facilitate zero-resource cross-lingual transfer for text generation. LAFT performs language-agnostic task acquisition to isolate task learning completely from the source language, and then language specification for better generation for specified languages. Experiments demonstrate that the proposed approach facilitates a better and parameter-efficient transferability on two text generation tasks.},
-  eprint    = {https://inlgmeeting.github.io/poster_paper25.html},
-  note  = {Best Short Paper},
-  author+an =  {3=highlight}
-}
+
 @InProceedings{huang2022icmla,
   author    = {Fei Huang and Hao Zhou and Yang Liu and Hang Li and Minlie Huang},
   booktitle = {the 39th International Conference on Machine Learning (ICML)},
@@ -38,10 +7,9 @@ The proposed method could be generalized to deal with larger biomolecular system
   month     = jul,
   abstract  = {Non-autoregressive Transformers (NATs) significantly reduce the decoding latency by generating all tokens in parallel. However, such independent predictions prevent NATs from capturing the dependencies between the tokens for generating multiple possible translations. In this paper, we propose Directed Acyclic Transfomer (DA-Transformer), which represents the hidden states in a Directed Acyclic Graph (DAG), where each path of the DAG corresponds to a specific translation. The whole DAG simultaneously captures multiple translations and facilitates fast predictions in a non-autoregressive fashion. Experiments on the raw training data of WMT benchmark show that DA-Transformer substantially outperforms previous NATs by about 3 BLEU on average, which is the first NAT model that achieves competitive results with autoregressive Transformers without relying on knowledge distillation.},
   eprint    = {https://arxiv.org/abs/2205.07459},
-  author+an =  {1=student; 2=highlight}
+  author+an =  {1=student; 2=highlight},
   student = {1}
 }
-
 @InProceedings{huang2022icmlb,
   author    = {Fei Huang and Tianhua Tao and Hao Zhou and Lei Li and Minlie Huang},
   booktitle = {the 39th International Conference on Machine Learning (ICML)},
