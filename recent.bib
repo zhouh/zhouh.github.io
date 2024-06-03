@@ -1,3 +1,113 @@
+@InProceedings{yang2024icml,
+  author    = {Junwei Yang and Kangjie Zheng and Siyu Long and Zaiqing Nie and Ming Zhang and Xinyu Dai and Wei-Ying Ma and Hao Zhou},
+  booktitle = {the 41th International Conference on Machine Learning (ICML)},
+  title     = {Mol-AE: Auto-Encoder Based Molecular Representation Learning With 3D Cloze Test Objective},
+  year      = {2024},
+  month     = jul,
+  abstract  = {3D molecular representation learning has gained tremendous interest and achieved promising performance in various downstream tasks. A series of recent approaches follow a prevalent framework: an encoder-only model coupled with a coordinate denoising objective. However, through a series of analytical experiments, we prove that the encoder-only model with coordinate denoising objective exhibits inconsistency between pre-training and downstream objectives, as well as issues with disrupted atomic identifiers. To address these two issues, we propose Mol-AE for molecular representation learning, an auto-encoder model using positional encoding as atomic identifiers. We also propose a new training objective named 3D Cloze Test to make the model learn better atom spatial relationships from real molecular substructures. Empirical results demonstrate that Mol-AE achieves a large margin performance gain compared to the current state-of-the-art 3D molecular modeling approach.},
+  eprint    = {https://biorxiv.org/content/10.1101/2024.04.13.589331v1},
+  author+an =  {8=highlight}
+}
+@InProceedings{zheng2024icml,
+  author    = {Kangjie Zheng and Siyu Long and Tianyu Lu and Junwei Yang and Xinyu Dai and Ming Zhang and Zaiqing Nie and Wei-Ying Ma and Hao Zhou},
+  booktitle = {the 41th International Conference on Machine Learning (ICML)},
+  title     = {ESM All-Atom: Multi-scale Protein Language Model for Unified Molecular Modeling},
+  year      = {2024},
+  month     = jul,
+  abstract  = {Protein language models have demonstrated significant potential in the field of protein engineering. However, current protein language models primarily operate at the residue scale, which limits their ability to provide information at the atom level. This limitation prevents us from fully exploiting the capabilities of protein language models for applications involving both proteins and small molecules. In this paper, we propose ESM-AA (ESM All-Atom), a novel approach that enables atom-scale and residue-scale unified molecular modeling. ESM-AA achieves this by pre-training on multi-scale code-switch protein sequences and utilizing a multi-scale position encoding to capture relationships among residues and atoms. Experimental results indicate that ESM-AA surpasses previous methods in protein-molecule tasks, demonstrating the full utilization of protein language models. Further investigations reveal that through unified molecular modeling, ESM-AA not only gains molecular knowledge but also retains its understanding of proteins. },
+  code = {https://github.com/zhengkangjie/ESM-AA},
+  eprint    = {https://arxiv.org/abs/2403.12995},
+  author+an =  {9=highlight}
+}
+@InProceedings{qu2024icml,
+  author    = {Yanru Qu and Keyue Qiu and Yuxuan Song and Jingjing Gong and Jiawei Han and Mingyue Zheng and Hao Zhou and Weiying Ma},
+  booktitle = {the 41th International Conference on Machine Learning (ICML)},
+  title     = {MolCRAFT: Structure-Based Drug Design in Continuous Parameter Space},
+  year      = {2024},
+  month     = jul,
+  abstract  = {Generative models for structure-based drug design (SBDD) have shown promising results in recent years. Existing works mainly focus on how to generate molecules with higher binding affinity, ignoring the feasibility prerequisites for generated 3D poses and resulting in false positives. We conduct thorough studies on key factors of ill-conformational problems when applying autoregressive methods and diffusion to SBDD, including mode collapse and hybrid continuous-discrete space. In this paper, we introduce MolCRAFT, the first SBDD model that operates in the continuous parameter space, together with a novel noise reduced sampling strategy. Empirical results show that our model consistently achieves superior performance in binding affinity with more stable 3D structure, demonstrating our ability to accurately model interatomic interactions. To our best knowledge, MolCRAFT is the first to achieve reference-level Vina Scores (-6.59 kcal/mol) with comparable molecular size, outperforming other strong baselines by a wide margin (-0.84 kcal/mol).},
+  code = {https://github.com/AlgoMole/MolCRAFT},
+  eprint    = {https://arxiv.org/abs/2404.12141},
+  author+an =  {7=highlight}
+}
+@InProceedings{luo2024kdd,
+  author    = {Yizhen Luo and Kai Yang and Massimo Hong and Xing Yi Liu and Zikun Nie and Hao Zhou and Zaiqing Nie},
+  booktitle = {the 30th SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)},
+  title     = {Learning Multi-view Molecular Representations with Structured and Unstructured Knowledge},
+  year      = {2024},
+  month     = aug,
+  abstract  = {Molecular representation learning bears promise in vast scientific domains. Capturing molecular expertise based on diverse views is of great significance in learning effective and generalizable molecular representations. However, existing approaches fall short in capturing view information explicitly and handling data from heterogeneous sources. To address these issues, we introduce MV-Mol, a molecular representation learning model that harvests multi-view molecular expertise from chemical structures, unstructured knowledge from biomedical texts, and structured knowledge from knowledge graphs. We propose to explicitly model view information with text prompts, and leverage a fusion architecture to extract view-based molecular representations. We present a two-stage pre-training procedure, exploiting heterogeneous data of varying quality and quantity. Through extensive experiments, we show the improved molecular representations of MV-Mol that bring substantial benefits to molecule property prediction. Additionally, MV-Mol exhibits state-of-the-art performance in multi-modal comprehension of molecular structures and texts. },
+  author+an =  {6=highlight}
+}
+@InProceedings{qian2024naacl,
+  author    = {Lihua Qian and Mingxuan Wang and Yang Liu and Hao Zhou},
+  booktitle = {Proceedings of the 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)},
+  title     = {Diffusion Glancing Transformer for Parallel Sequence-to-Sequence Learning},
+  year      = {2024},
+  month     = jul,
+  abstract  = {Previously, non-autoregressive models were widely recognized as being superior in generation efficiency but inferior in generation quality due to the challenges of modeling multiple target modalities. To enhance the multi-modality modeling ability, we propose the diffusion glancing transformer, which employs a modality diffusion process and residual glancing sampling. The modality diffusion process is a discrete process that interpolates the multi-modal distribution along the decoding steps, and the residual glancing sampling approach guides the model to continuously learn the remaining modalities across the layers. Experimental results on various machine translation and text generation benchmarks demonstrate that DIFFGLAT achieves better generation accuracy while maintaining fast decoding speed compared with both autoregressive and non-autoregressive models.},
+  eprint    = {https://arxiv.org/abs/2212.10240},
+  author+an =  {4=highlight}
+}
+@InProceedings{yu2024iclr,
+  author    = {Qiying Yu and Yudi Zhang and Yuyan Ni and Shikun Feng and Yanyan Lan and Hao Zhou and Jingjing Liu.},
+  booktitle = {the 12th International Conference on Learning Representations (ICLR)},
+  title     = {Multimodal Molecular Pretraining via Modality Blending},
+  year      = {2024},
+  month     = jan,
+  abstract  = {Self-supervised learning has recently gained growing interest in molecular modeling for scientific tasks such as AI-assisted drug discovery. Current studies consider leveraging both 2D and 3D molecular structures for representation learning. However, relying on straightforward alignment strategies that treat each modality separately, these methods fail to exploit the intrinsic correlation between 2D and 3D representations that reflect the underlying structural characteristics of molecules, and only perform coarse-grained molecule-level alignment. To derive fine-grained alignment and promote structural molecule understanding, we introduce an atomic-relation level "blend-then-predict" self-supervised learning approach, MoleBLEND, which first blends atom relations represented by different modalities into one unified relation matrix for joint encoding, then recovers modality-specific information for 2D and 3D structures individually. By treating atom relationships as anchors, MoleBLEND organically aligns and integrates visually dissimilar 2D and 3D modalities of the same molecule at fine-grained atomic level, painting a more comprehensive depiction of each molecule. Extensive experiments show that MoleBLEND achieves state-of-the-art performance across major 2D/3D molecular benchmarks. We further provide theoretical insights from the perspective of mutual-information maximization, demonstrating that our method unifies contrastive, generative (cross-modality prediction) and mask-then-predict (single-modality prediction) objectives into one single cohesive framework.},
+  eprint    = {https://arxiv.org/abs/2307.06235},
+  author+an =  {1=student;6=highlight}
+}
+
+@InProceedings{song2024iclr,
+  author    = {Yuxuan Song and Jingjing Gong and Hao Zhou and Mingyue Zheng and Jingjing Liu and Weiying Ma},
+  booktitle = {the 12th International Conference on Learning Representations (ICLR)},
+  title     = {Unified Generative Modeling of 3D Molecules with Bayesian Flow Networks},
+  year      = {2024},
+  month     = jan,
+  abstract  = {Advanced generative model (e.g., diffusion model) derived from simplified continuity assumptions of data distribution, though showing promising progress, has been difficult to apply directly to geometry generation applications due to the multi-modality and noise-sensitive nature of molecule geometry. This work introduces Geometric Bayesian Flow Networks (GeoBFN), which naturally fits molecule geometry by modeling diverse modalities in the differentiable parameter space of distributions. GeoBFN maintains the SE-(3) invariant density modeling property by incorporating equivariant inter-dependency modeling on parameters of distributions and unifying the probabilistic modeling of different modalities. Through optimized training and sampling techniques, we demonstrate that GeoBFN achieves state-of-the-art performance on multiple 3D molecule generation benchmarks in terms of generation quality (90.87% molecule stability in QM9 and 85.6% atom stability in GEOM-DRUG. GeoBFN can also conduct sampling with any number of steps to reach an optimal trade-off between efficiency and quality (e.g., 20-times speedup without sacrificing performance).},
+  eprint    = {https://arxiv.org/abs/2403.15441},
+  code = {https://github.com/AlgoMole/GeoBFN/},
+  author+an =  {1=student;3=highlight}
+}
+@InProceedings{song2023neurips,
+  author    = {Yuxuan Song and Jingjing Gong and Ziyao Cao and Minkai Xu and Stefano Ermon and Hao Zhou and Weiying Ma},
+  booktitle = {the 38th Conference on Neural Information Processing Systems (NeurIPS)},
+  title     = {Equivariant Flow Matching with Hybrid Probability Transport for 3D Molecule Generation },
+  year      = {2023},
+  month     = dec,
+  abstract  = {The generation of 3D molecules requires simultaneously deciding the categorical features~(atom types) and continuous features~(atom coordinates). Deep generative models, especially Diffusion Models (DMs), have demonstrated effectiveness in generating feature-rich geometries. However, existing DMs typically suffer from unstable probability dynamics with inefficient sampling speed. In this paper, we introduce geometric flow matching, which enjoys the advantages of both equivariant modeling and stabilized probability dynamics. More specifically, we propose a hybrid probability path where the coordinates probability path is regularized by an equivariant optimal transport, and the information between different modalities is aligned. Experimentally, the proposed method could consistently achieve better performance on multiple molecule generation benchmarks with 4.75× speed up of sampling on average.},
+  code      = {https://github.com/AlgoMole/MolFM},
+  eprint    = {https://arxiv.org/abs/2312.07168},
+  author+an =  {1=student; 6=highlight},
+  
+}
+@InProceedings{wang2023accelerating,
+  author    = {Danqing Wang and Zeyu Wen and Fei Ye and Lei Li and Hao Zhou},
+  booktitle = {the 29th SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)},
+  title     = {Accelerating Antimicrobial Peptide Discovery with Latent Structure},
+  year      = {2023},
+  month     = aug,
+  abstract  = {Antimicrobial peptides (AMPs) are promising therapeutic approaches against drug-resistant pathogens. Recently, deep generative models are used to discover new AMPs. However, previous studies mainly
+focus on peptide sequence attributes and do not consider crucial structure information. In this paper, we propose a latent sequence structure model for designing AMPs (LSSAMP). LSSAMP exploits multi-scale vector quantization in the latent space to represent secondary structures (e.g. alpha helix and beta sheet). By sampling in the latent space, LSSAMP can simultaneously generate peptides with ideal sequence attributes and secondary structures. Experimental results show that the peptides generated by LSSAMP have a high probability of antimicrobial activity. Our wet laboratory experiments verified that two of the 21 candidates exhibit strong antimicrobial activity. The code is released at https://github.com/dqwang122/LSSAMP.},
+  code      = {https://github.com/dqwang122/LSSAMP},
+  eprint    = {https://arxiv.org/abs/2212.09450},
+  author+an =  {1=student;5=highlight}
+}
+
+
+@InProceedings{qiang2023icml,
+  author    = {Bo Qiang and Yuxuan Song and Minkai Xu and Bowen Gao and Hao Zhou and Weiying Ma and Yanyan Lan},
+  booktitle = {the 40th International Conference on Machine Learning (ICML)},
+  title     = {Coarse-to-Fine: a Hierarchical Diffusion Model for Molecule Generation in 3D},
+  year      = {2023},
+  month     = jul,
+  abstract  = {Generating desirable molecular structures in 3D is a fundamental problem for drug discovery. Despite the considerable progress we have achieved, existing methods usually generate molecules in atom resolution and ignore intrinsic local structures such as rings, which leads to poor quality in generated structures, especially when generating large molecules. Fragment-based molecule generation is a promising strategy, however, it is nontrivial to be adapted for 3D non-autoregressive generations because of the combinational optimization problems. In this paper, we utilize a coarse-to-fine strategy to tackle this problem, in which a Hierarchical Diffusion-based model (i.e.~HierDiff) is proposed to preserve the validity of local segments without relying on autoregressive modeling. Specifically, HierDiff first generates coarse-grained molecule geometries via an equivariant diffusion process, where each coarse-grained node reflects a fragment in a molecule. Then the coarse-grained nodes are decoded into fine-grained fragments by a message-passing process and a newly designed iterative refined sampling module. Lastly, the fine-grained fragments are then assembled to derive a complete atomic molecular structure. Extensive experiments demonstrate that HierDiff consistently improves the quality of molecule generation over existing methods.},
+  code = {https://github.com/qiangbo1222/HierDiff},
+  eprint    = {https://proceedings.mlr.press/v202/qiang23a/qiang23a.pdf},
+  author+an =  {6=highlight}
+}
 @InProceedings{wyq2023iclr,
   author    = {Yiqun Wang and Yuning Shen and Shi Chen and Lihao Wang and Fei Ye and Hao Zhou},
   booktitle = {the 11th International Conference on Learning Representations (ICLR)},
@@ -40,6 +150,7 @@
   author+an =  {1=student; 6=highlight},
   student = {1}
 }
+
 @InProceedings{huang2022icmla,
   author    = {Fei Huang and Hao Zhou and Yang Liu and Hang Li and Minlie Huang},
   booktitle = {the 39th International Conference on Machine Learning (ICML)},
@@ -60,50 +171,5 @@
   abstract  = {Non-autoregressive Transformer (NAT) is a family of text generation models, which aims to reduce the decoding latency by predicting the whole sentences in parallel. However, such latency reduction sacrifices the ability to capture left-to-right dependencies, thereby making NAT learning very challenging. In this paper, we present theoretical and empirical analyses to reveal the challenges of NAT learning and propose a unified perspective to understand existing successes. First, we show that simply training NAT by maximizing the likelihood can lead to an approximation of marginal distributions but drops all dependencies between tokens, where the dropped information can be measured by the dataset's conditional total correlation. Second, we formalize many previous objectives in a unified framework and show that their success can be concluded as maximizing the likelihood on a proxy distribution, leading to a reduced information loss. Empirical studies show that our perspective can explain the phenomena in NAT learning and guide the design of new training methods.},
   eprint    = {https://arxiv.org/abs/2206.05975},
   author+an =  {1=student; 3=highlight},
-  student = {1}
-}
-@InProceedings{bao2022latent,
-  author    = {Yu Bao and Hao Zhou and Shujian Huang and Dongqi Wang and Lihua Qian and Xinyu Dai and Jiajun Chen and Lei Li},
-  booktitle = {the 60th Annual Meeting of the Association for Computational Linguistics (ACL)},
-  title     = {latent-{GLAT}: Glancing at Latent Variables for Parallel Text Generation},
-  year      = {2022},
-  month     = may,
-  abstract  = {Recently, parallel text generation has received widespread attention due to its success in generation efficiency. Although many advanced techniques are proposed to improve its generation quality, they still need the help of an autoregressive model for training to overcome the one-to-many multi-modal phenomenon in the dataset, limiting their applications. In this paper, we propose latent-GLAT, which employs the discrete latent variables to capture word categorical information and invoke an advanced curriculum learning technique, alleviating the multi-modality problem. Experiment results show that our method outperforms strong baselines without the help of an autoregressive model, which further broadens the application scenarios of the parallel decoding paradigm.},
-  code      = {https://github.com/baoy-nlp/Latent-GLAT},
-  eprint    = {https://openreview.net/forum?id=y4xCe0MSoWx},
-  author+an =	 {1=student; 2=highlight},
-  student = {1}
-}
-@InProceedings{fu2022contextual,
-  author    = {Zhiyi Fu and Wangchunshu Zhou and Jingjing Xu and Hao Zhou and Lei Li},
-  booktitle = {the 60th Annual Meeting of the Association for Computational Linguistics (ACL)},
-  title     = {Contextual Representation Learning beyond Masked Language Modeling},
-  year      = {2022},
-  month     = may,
-  abstract  = {How do masked language models (MLMs) such as BERT learn contextual representations? In this work, we analyze the learning dynamics of MLMs. We find that MLMs adopt sampled embeddings as anchors to estimate and inject contextual semantics to representations, which limits the efficiency and effectiveness of MLMs. To address these issues, we propose TACO, a simple yet effective representation learning approach to directly model global semantics. TACO extracts and aligns contextual semantics hidden in contextualized representations to encourage models to attend global semantics when generating contextualized representations. Experiments on the GLUE benchmark show that TACO achieves up to 5x speedup and up to 1.2 points average improvement over existing MLMs.},
-  code      = {https:// github.com/FUZHIYI/TACO},
-  eprint    = {https://openreview.net/forum?id=KWL_ElhUejN},
-  author+an =	 {4=highlight}
-}
-@InProceedings{song2022switch,
-  author    = {Zhenqiao Song and Hao Zhou and Lihua Qian and Jingjing Xu and Shanbo Cheng and Mingxuan Wang and Lei Li},
-  booktitle = {International Conference on Learning Representations (ICLR)},
-  title     = {{switch-GLAT}: Multilingual Parallel Machine Translation via Code-switch Decoder},
-  year      = {2022},
-  month     = apr,
-  eprint    = {https://openreview.net/forum?id=5HvpvYd68b},
-  abstract  = {Multilingual machine translation aims to develop a single model for multiple language directions. However, existing multilingual models based on Transformer are limited in terms of both translation performance and inference speed. In this paper, we propose switch-GLAT, a non-autoregressive multilingual machine translation model with a code-switch decoder. It can generate contextual code-switched translations for a given source sentence, and perform code-switch back-translation, greatly boosting multilingual translation performance. In addition, its inference is highly efficient thanks to its parallel decoder. Experiments show that our proposed switch-GLAT outperform the multilingual Transformer with as much as 1.16 BLEU improvement and 6.6x faster decoding speed in inference.},
-  author+an =  {1=student; 2=highlight; 3=student},
-  student = {1}
-}
-@InProceedings{yang2022enhancing,
-  author    = {Huiyun Yang and Huadong Chen and Hao Zhou and Lei Li},
-  booktitle = {International Conference on Learning Representations (ICLR)},
-  title     = {Enhancing Cross-lingual Transfer by Manifold Mixup},
-  year      = {2022},
-  month     = apr,
-  eprint    = {https://openreview.net/forum?id=OjPmfr9GkVv},
-  abstract  = {Based on large-scale pre-trained multilingual representations, recent cross-lingual transfer methods have achieved impressive transfer performances. However, the performance of target languages still lags far behind the source language. In this paper, our analyses indicate such a performance gap is strongly associated with the cross-lingual representation discrepancy. To achieve better cross-lingual transfer performance, we propose the cross-lingual manifold mixup (X-Mixup) method, which adaptively calibrates the representation discrepancy and gives a compromised representation for target languages. Experiments on the XTREME benchmark show X-Mixup achieves 1.8% performance gains on multiple text understanding tasks, compared with strong baselines, and significantly reduces the cross-lingual representation discrepancy.},
-  author+an =	 {1=student; 3=highlight},
   student = {1}
 }
