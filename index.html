@@ -17,252 +17,1209 @@ title: "Hao Zhou（周浩)"
   li.paper .me {
     background-color: #eeffee;
   }
+
   li.hight {
-            font-weight: bold;
-            font-size: 12pt;
-        }
-        
+    font-weight: bold;
+    font-size: 12pt;
+  }
+
+  h2 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    position: relative;
+  }
+
+
+  /* 微信二维码样式 */
+  .wx-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .wx-qrcode {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    width: 216px;
+    height: 216px;
+  }
+
+  .wx-qrcode::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: white;
+  }
+
+  .wx-qrcode img {
+    width: 200px !important;
+    height: 200px !important;
+    display: block !important;
+    object-fit: cover !important;
+  }
+
+
+  div.wx-icon:hover .wx-qrcode {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .wx-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .wx-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+
+  .label {
+    cursor: pointer;
+  }
+
+  .kuai {
+    width: 10px;
+    height: 20px;
+    background-color: #000;
+    display: inline-block;
+    margin: auto 0;
+    margin-right: 10px;
+  }
+
+  /* 增强按钮样式系统 */
+  .resource-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .enhanced-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    min-width: auto;
+    height: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    vertical-align: top;
+  }
+
+  /* 横向序号配色 */
+  .enhanced-btn.tone-1 {
+    background-color: #5022b8 !important;
+    color: #ffffff;
+  }
+
+  .enhanced-btn.tone-2 {
+    background-color: #4d3db0 !important;
+    color: #ffffff;
+  }
+
+  .enhanced-btn.tone-3 {
+    background-color: #4a58a8 !important;
+    color: #ffffff;
+  }
+
+  .enhanced-btn.tone-4 {
+    background-color: #4773a0 !important;
+    color: #ffffff;
+  }
+
+  .enhanced-btn.tone-5 {
+    background-color: #448e98 !important;
+    color: #ffffff;
+  }
+
+  .enhanced-btn.tone-6 {
+    background-color: #41a990 !important;
+    color: #ffffff;
+  }
+
+  .enhanced-btn:hover {
+    filter: brightness(1.05);
+  }
+
+  /* 按钮图标样式 */
+  .btn-icon {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* 按钮徽章样式 */
+  .btn-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 999px;
+    margin-left: 5px;
+    min-width: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .btn-badge.new {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    font-weight: 800;
+    letter-spacing: 0.4px;
+  }
+
+  /* 移动端响应式 */
+  @media (max-width: 768px) {
+    .btn-badge {
+      font-size: 10px;
+      padding: 1px 4px;
+      margin-left: 3px;
+    }
+  }
 </style>
 
 
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-          type="text/css"/>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164510176-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<link rel="preload" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164510176-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164510176-1');
+
+  function toNewTab(url) {
+    window.open(url, '_blank');
+  }
+
+  // 本地存储管理
+  const CACHE_PREFIX = 'github_stars_';
+  const CITATION_CACHE_PREFIX = 'citation_count_';
+  const CACHE_EXPIRY = 1000 * 60 * 60 * 24;  // 24小时过期
+
+  // 保存数据到本地存储
+  function saveToCache(key, data) {
+    const cacheData = {
+      data: data,
+      timestamp: Date.now()
+    };
+    localStorage.setItem(key, JSON.stringify(cacheData));
+  }
+
+  // 从本地存储获取数据
+  function getFromCache(key) {
+    try {
+      const cached = localStorage.getItem(key);
+      if (!cached) return null;
+
+      const cacheData = JSON.parse(cached);
+      const now = Date.now();
+
+      // 检查是否过期
+      if (now - cacheData.timestamp > CACHE_EXPIRY) {
+        localStorage.removeItem(key);
+        return null;
+      }
+
+      return cacheData.data;
+    } catch (error) {
+      console.error('读取缓存失败:', error);
+      return null;
+    }
+  }
+
+  // 数量格式化（1234 → 1.2k, 1450000 → 1.5M）
+  function formatCount(num) {
+    if (typeof num !== 'number') return num;
+    if (num >= 1000000) {
+      const v = (num / 1000000).toFixed(1);
+      return (v.endsWith('.0') ? v.slice(0, -2) : v) + 'M';
+    }
+    if (num >= 1000) {
+      const v = (num / 1000).toFixed(1);
+      return (v.endsWith('.0') ? v.slice(0, -2) : v) + 'k';
+    }
+    return String(num);
+  }
+
+  // 为同一行的资源按钮应用顺序配色
+  function applyRowTones(container) {
+    try {
+      var buttons = container.querySelectorAll('.enhanced-btn');
+      buttons.forEach(function (btn, idx) {
+        btn.classList.remove('tone-1', 'tone-2', 'tone-3', 'tone-4', 'tone-5', 'tone-6');
+        var n = (idx % 6) + 1;
+        btn.classList.add('tone-' + n);
+      });
+    } catch (e) { console.warn('tone apply failed', e); }
+  }
+
+  // 图标函数
+  function iconGithub() {
+    return '<span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path></svg></span>';
+  }
+
+  function iconPage() {
+    return '<span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"></path></svg></span>';
+  }
+
+  function iconStar() {
+    return '<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>';
+  }
+
+  function iconQuote() {
+    return '<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M14 17h3l2-4V7h-6v6h3l-2 4zM6 17h3l2-4V7H5v6h3l-2 4z"></path></svg>';
+  }
+
+  function iconScholar() {
+    return '<span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>';
+  }
+
+  function iconArxiv() {
+    return '<span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg></span>';
+  }
+
+  function iconData() {
+    return '<span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path><path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"></path></svg></span>';
+  }
+
+  function iconModel() {
+    return '<span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="6" r="2"></circle><circle cx="6" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle><circle cx="12" cy="12" r="3"></circle><path d="M8 6l2.5 4.5M16 6l-2.5 4.5M8 18l2.5-4.5M16 18l-2.5-4.5"></path></svg></span>';
+  }
+
+  function iconDemo() {
+    return '<span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span>';
+  }
+
+  // 更新元素显示（星数）
+  function updateStarsDisplay(elementId, stars) {
+    const element = document.getElementById(elementId);
+    if (element && stars !== undefined) {
+      element.classList.add('enhanced-btn');
+
+      let buttonText = iconGithub() + 'Code';
+      let badge = '';
+
+      if (stars > 10) {
+        badge = `<span class="btn-badge">${iconStar()} ${formatCount(stars)}</span>`;
+      } else {
+        badge = '<span class="btn-badge new">NEW</span>';
+      }
+
+      element.innerHTML = `${buttonText}${badge}`;
+
+      const row = element.closest('.resource-row');
+      if (row) {
+        applyRowTones(row);
+      }
+    }
+  }
+
+  // 更新元素显示（引用数）
+  function updateCitationsDisplay(elementId, citedBy) {
+    const element = document.getElementById(elementId);
+    if (element) {
+      if (citedBy < 10) {
+        element.style.display = 'none';
+        return;
+      }
+
+      element.style.display = '';
+      element.classList.add('enhanced-btn');
+
+      let buttonText = iconScholar() + 'Citations';
+      let badge = `<span class="btn-badge">${iconQuote()} ${formatCount(citedBy)}</span>`;
+
+      element.innerHTML = `${buttonText}${badge}`;
+
+      const row = element.closest('.resource-row');
+      if (row) {
+        applyRowTones(row);
+      }
+    }
+  }
+
+  // 获取GitHub仓库星数的函数（带缓存）
+  async function fetchGitHubStars(repo, elementId) {
+    const cacheKey = CACHE_PREFIX + repo.replace('/', '_');
+
+    const cachedStars = getFromCache(cacheKey);
+    if (cachedStars !== null) {
+      console.log(`📦 使用缓存的星数 ${repo}: ${cachedStars}`);
+      updateStarsDisplay(elementId, cachedStars);
+    }
+
+    try {
+      const response = await fetch(`https://api.github.com/repos/${repo}`);
+      const data = await response.json();
+      const stars = data.stargazers_count;
+
+      if (stars !== undefined) {
+        saveToCache(cacheKey, stars);
+        console.log(`✅ 更新并缓存星数 ${repo}: ${stars}`);
+
+        if (cachedStars !== stars) {
+          updateStarsDisplay(elementId, stars);
         }
+      }
+    } catch (error) {
+      console.log('获取GitHub星数失败:', error);
+      if (cachedStars === null) {
+        updateStarsDisplay(elementId, 0);
+      }
+    }
+  }
 
-        gtag('js', new Date());
+  // 使用ReadyAI API获取Google Scholar引用数（带缓存）
+  async function fetchCitationFromReadyAI(query, elementId, paperTitle) {
+    const cacheKey = CITATION_CACHE_PREFIX + paperTitle.replace(/[^a-zA-Z0-9]/g, '_');
 
-        gtag('config', 'UA-164510176-1');
-    </script>
+    const cachedCitations = getFromCache(cacheKey);
+    if (cachedCitations !== null) {
+      console.log(`📦 使用缓存的引用数 ${paperTitle}: ${cachedCitations}`);
+      updateCitationsDisplay(elementId, cachedCitations);
+    }
+
+    try {
+      const apiUrl = `https://data.readyai.tech/api/google_scholar/cited_num?query=${encodeURIComponent(query)}`;
+      console.log(`🔍 正在查询: ${query}`);
+
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+
+      let citedBy = 0;
+      if (data && typeof data.cited_num !== 'undefined') {
+        citedBy = parseInt(data.cited_num) || 0;
+      } else if (data && typeof data.cited_by !== 'undefined') {
+        citedBy = parseInt(data.cited_by) || 0;
+      } else if (data && typeof data === 'number') {
+        citedBy = data;
+      } else if (data && typeof data === 'string' && !isNaN(data)) {
+        citedBy = parseInt(data) || 0;
+      }
+
+      if (citedBy !== undefined) {
+        saveToCache(cacheKey, citedBy);
+        console.log(`✅ 更新并缓存引用数 ${paperTitle}: ${citedBy}`);
+
+        if (cachedCitations !== citedBy) {
+          updateCitationsDisplay(elementId, citedBy);
+        }
+      }
+
+      return citedBy;
+    } catch (error) {
+      console.error(`❌ 获取 "${query}" 引用数失败:`, error);
+      const fallbackCitations = getCitationCountFallback(paperTitle);
+      if (cachedCitations === null) {
+        updateCitationsDisplay(elementId, fallbackCitations);
+        return fallbackCitations;
+      }
+      return cachedCitations;
+    }
+  }
+
+  // 备用静态引用数据
+  function getCitationCountFallback(paperTitle) {
+    const citationMap = {
+      'Seed Diffusion Preview': 0,
+      'AMix-1': 0,
+      'MemAgent': 0,
+      'DAPO': 0
+    };
+    return citationMap[paperTitle] || 0;
+  }
+
+  // 主要的引用数获取函数
+  async function getCitationCount(paperTitle, elementId) {
+    const queryMap = {
+      'Seed Diffusion Preview': 'Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed Inference',
+      'AMix-1': 'AMix-1 Pathway Test-Time Scalable Protein Foundation Model',
+      'MemAgent': 'MemAgent Reshaping Long-Context LLM Multi-Conv RL Memory Agent',
+      'DAPO': 'DAPO Open-Source LLM Reinforcement Learning System Scale'
+    };
+
+    const query = queryMap[paperTitle] || paperTitle;
+    return await fetchCitationFromReadyAI(query, elementId, paperTitle);
+  }
+</script>
 
 
 
 <div class="row">
-  <div class="col-sm-3 col-md-2">
-    <img src="static/2024_p.png" class="img-thumbnail" width="420px"
-    style="margin-top: 10px; margin-bottom: 15px">
+  <div class="col-sm-3 col-md-3" style="display: flex; align-items: flex-end;">
+    <img src="static/2024_p.jpeg" class="img-thumbnail" width="500px" style="margin-bottom: 0px;">
   </div>
-  <div class="col-sm-9 col-md-10">
+  <div class="col-sm-9 col-md-9" style="margin-top: 10px;">
     <h1>Hao Zhou (周浩)</h1>
+    <p>Research Associate Professor</p>
     <p>
-      Research Associate Professor<br>
-      <a href="https://air.tsinghua.edu.cn//">Insititute for AI Industry Research (AIR), Tsinghua University</a><br>
-      Email: zhouhao<img class="eq" src="static/8192024641-130.png" alt="@" style="vertical-align: -1px">air.tsinghua.edu.cn <b><i>,</i></b> haozhou0806<img class="eq" src="static/8192024641-130.png" alt="@" style="vertical-align: -1px">gmail.com</p>
+      <a href="https://air.tsinghua.edu.cn//" target="_blank">Insititute for AI Industry Research (AIR), Tsinghua
+        University</a><br>
+    </p>
+
+    <p style="display: flex;align-items: center;"> <img src="static/email.png" width="20" style="margin-right: 5px;"
+        alt="@" style="vertical-align: -1px"> Email: <a
+        href="mailto:zhouhao@air.tsinghua.edu.cn">zhouhao@air.tsinghua.edu.cn</a> & <a
+        href="mailto:haozhou0806@gmail.com">haozhou0806@gmail.com</a></p>
+    <!-- <p style="display: flex;align-items: center;"> <img src="static/location.png" width="20" style="margin-right: 5px;" alt="@" style="vertical-align: -1px">Location: Beijing, China</p> -->
+
+    <div style="margin-top: 15px;" style="display: flex;align-items: center;">
+      <!-- <div class="wx-icon" onclick="toNewTab('https://github.com/zhouh')" style="display: inline-block;">
+        <img src="static/Github.png" alt="GitHub" style="width: 30px; height: 30px; margin-right: 10px;">
+      </div> -->
+
+      <div class="wx-icon" onclick="toNewTab('https://huggingface.co/GenSI')" style="display: inline-block;">
+        <img src="static/hf.png" alt="Hugging Face" style="width: 30px; height: 30px; margin-right: 10px;">
+      </div>
+
+      <div class="wx-icon hover-test" style="display: inline-block;">
+        <img src="static/wx_black.png" alt="WeChat" style="width: 30px; height: 30px; margin-right: 10px;">
+        <div class="wx-qrcode">
+          <img src="static/project/qrcode.png" alt="微信二维码" />
+        </div>
+      </div>
+
+      <div class="wx-icon" onclick="toNewTab('https://www.xiaohongshu.com/user/profile/65465f81000000000301f9bd')"
+        style="display: inline-block;">
+        <img src="static/rn_black.png" alt="ResearchGate" style="width: 30px; height: 30px; margin-right: 10px;">
+      </div>
+
+      <div class="wx-icon" onclick="toNewTab('https://www.zhihu.com/people/generative-si/posts')"
+        style="display: inline-block;">
+        <img src="static/zh.png" alt="Zhihu" style="width: 30px; height: 30px; margin-right: 10px;">
+      </div>
+
+      <div class="wx-icon" onclick="toNewTab('https://x.com/GenSI_official')" style="display: inline-block;">
+        <img src="static/x.png" alt="X/Twitter" style="width: 30px; height: 30px; margin-right: 10px;">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<p style="margin-top: 20px;">
+  <font size="3">
+    Hello!
+    I am a Research Associate Professor at the <a target="_blank" href="https://air.tsinghua.edu.cn/">Institute for AI
+      Industry Research
+      (AIR), Tsinghua University</a>. <span style="text-decoration: underline;">My work centers on building Generative
+      AI for discrete symbols (text and proteins). I focus on <span
+        style="background:#fff3cd; padding:0 4px; border-radius:3px; font-weight:600;">Large Language Models
+        (LLMs)</span> and their specialized application to <span
+        style="background:#d1ecf1; padding:0 4px; border-radius:3px; font-weight:600;">Protein Agents</span>.</span>
+    Previously, I was a Research Scientist/Manager at <a href="https://bytedance.com/en/" target="_blank">Bytedance</a>,
+    where I led the ByteDance AI Lab research teams on text generation and AI drug design.
+    Here is my bio in Chinese <a href="chinese_intro.html" target="_blank">中文</a> and my <a
+      href="https://github.com/zhouh/zhouh.github.io/releases/download/v1.0/my_cv.pdf?raw=true">CV</a>.
+</p>
+
+<ul style="margin-top: 8px;">
+  <li>
+    <font size="3">I lead the <a href="https://www.gensi-thuair.com/#/portal_home" target="_blank">GenSI</a> research
+      group at Tsinghua AIR</font>
+  </li>
+  <li>
+    <font size="3">I co-lead the <a href="https://github.com/BytedTsinghua-SIA" target="_blank">SIA Lab, the joint
+        laboratory of THU-AIR and <a target="_blank" href="https://seed.bytedance.com/en/">Bytedance Seed</a> on
+        cutting-edge LLM research.</a></font>
+  </li>
+  <li>
+    <font size="3"><strong>Professional Service: </strong>Area Chair of EMNLP 2022; ACL 2023; NeurIPS 2022–2025; ICML
+      2023–2025; ICLR 2023–2026.</font>
+  </li>
+</ul>
+
+<hr>
+
+
+<h2>
+  <div class="kuai"></div> Recent Highlight
+</h2>
+
+<div class="row" style="margin-bottom: 30px;">
+  <div class="col-md-4">
+    <img src="static/project/pro3.jpeg" class="img-thumbnail" style="width: 100%; height: 200px; object-fit: cover;">
+  </div>
+  <div class="col-md-8">
+    <h3 style="color: #2c3e50; margin-bottom: 15px; margin-top: 0px;">Seed Diffusion Preview</h3>
+    <p style="text-align: justify; line-height: 1.6;">
+      A large scale language model based on discrete-state diffusion, <span
+        style="background:#fff3cd; padding:0 4px; border-radius:3px; font-weight:600;">achieves an inference speed of
+        2,146 token/s</span>, outperforming its Google Gemini Diffusion and Mercury Counterparts.
+    </p>
+    <p style="text-align: justify; line-height: 1.6;">🚀 全面超越google的Gemini-diffusion，一秒钟生成2000+的词，性能不掉！</p>
+    <p class="resource-row">
+      <span class="enhanced-btn" onclick="window.open('https://seed.bytedance.com/zh/seed_diffusion', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z">
+            </path>
+          </svg></span>Page
+      </span>
+      <span class="enhanced-btn"
+        onclick="window.open('https://lf3-static.bytednsdoc.com/obj/eden-cn/hyvsmeh7uhobf/sdiff_updated.pdf', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z">
+            </path>
+          </svg></span>Paper
+      </span>
+      <span class="enhanced-btn" onclick="window.open('https://studio.seed.ai/exp/seed_diffusion/', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path d="M8 5v14l11-7z"></path>
+          </svg></span>Demo
+      </span>
+      <span class="enhanced-btn" id="seed-scholar-btn"
+        onclick="window.open('https://scholar.google.com/scholar?q=Seed+Diffusion+Preview', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path>
+          </svg></span>Citations<span class="btn-badge new">NEW</span>
+      </span>
     </p>
   </div>
 </div>
 
-<p><font size="3">
-  Hello! 
-  I am a research associate professor at <a href="https://air.tsinghua.edu.cn/">Insititute for AI Industry Research (AIR), Tsinghua University</a>. My research interest is developing Generative AI models to better understand/generate discerte symbols including text, small molecules and proteins. Previously, I was a Research Scientist/Manager at <a href="bytedance.com/en/">Bytedance AI lab</a>. Currently, I lead the Generative Symbolic Intelligence group at Tsinghua AIR and co-lead the SIA Lab, a Joint Laboratory of THUAIR and ByteDance on LLM research. Here is my <a href="https://github.com/zhouh/zhouh.github.io/blob/master/files/my_cv.pdf">CV</a>.  
- 
-</p>
 
-<hr>
-<h2><font>News</font></h2> 
-  
-<p></p>
+<div class="row" style="margin-bottom: 30px;">
+  <div class="col-md-4">
+    <img src="static/project/pro4.jpeg" class="img-thumbnail" style="width: 100%; height: 200px; object-fit: cover;">
+  </div>
+  <div class="col-md-8">
+    <h3 style="color: #2c3e50; margin-bottom: 15px; margin-top: 0px;">AMix-1: A Pathway to Test-Time Scalable Protein
+      Foundation Model</h3>
 
-<ul>
-  <font size="3" color="red">* Jun. 2024: We're Hiring! Looking for posdoc fellowship (2 hc) and research asistant (2 hc) to join us. Also welcome students to intern in our lab. Please feel free to contact me if you are interested. </font>
+    <p style="text-align: justify; line-height: 1.6;">
+      We propose a systematic paradigm, including<span
+        style="background:#fff3cd; padding:0 4px; border-radius:3px; font-weight:600;"> scaling laws, structural
+        emergent ability, in-context
+        learning, and test-time scaling</span>, for crafting protein foundation models, <span
+        style="background:#fff3cd; padding:0 4px; border-radius:3px; font-weight:600;">emphasizing a road map towards
+        scalable protein design</span>. We design a high-activity AmeR variant with a 50× improvement over the wild
+      type.
+    </p>
+    <p style="text-align: justify; line-height: 1.6;">全新可推理、可Test-time-Scaling的蛋白质基座 AMix-1🔥！<br>
+      我们提出了AMix-1，首次尝试以Scaling Law、Emergent Ability、In-Context Learning 和 Test-time Scaling
+      的系统化方法论来构建蛋白质基座模型，并和清华张数一老师团队合作在AmeR蛋白设计上提升其能力50倍！</p>
+    <p>
+    <p class="resource-row">
+      <span class="enhanced-btn" onclick="window.open('https://gensi-thuair.github.io/AMix-1/', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z">
+            </path>
+          </svg></span>Page
+      </span>
+      <span class="enhanced-btn" onclick="window.open('https://arxiv.org/pdf/2507.08920', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z">
+            </path>
+          </svg></span>Paper
+      </span>
+      <span class="enhanced-btn" id="amix-code-btn"
+        onclick="window.open('https://github.com/GenSI-THUAIR/AMix-1', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z">
+            </path>
+          </svg></span>Code<span class="btn-badge new">NEW</span>
+      </span>
+      <span class="enhanced-btn" onclick="window.open('https://huggingface.co/GenSI/AMix-1-1.7B', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <circle cx="6" cy="6" r="2"></circle>
+            <circle cx="18" cy="6" r="2"></circle>
+            <circle cx="6" cy="18" r="2"></circle>
+            <circle cx="18" cy="18" r="2"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M8 6l2.5 4.5M16 6l-2.5 4.5M8 18l2.5-4.5M16 18l-2.5-4.5"></path>
+          </svg></span>Model
+      </span>
+      <span class="enhanced-btn" id="amix-scholar-btn"
+        onclick="window.open('https://scholar.google.com/scholar?q=AMix-1+Pathway+Test-Time+Scalable+Protein+Foundation+Model', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path>
+          </svg></span>Citations<span class="btn-badge new">NEW</span>
+      </span>
+    </p>
+  </div>
+</div>
 
-</ul>
-<ul>
-  <font size="3">* May - Jun. 2024: Gave a talk about <b>Generative AI for Scientific Discovery</b> at <a href="https://www.cfd.tsinghua.edu.cn/fwxm/jsjl/qnxzsl.htm">Tsinghua Young Scholars Monthly Salon</a>, <a href="https://www.catl.com/">CATL</a>, <a href="https://chembic.nju.edu.cn/main.htm">ChemBIC Research</a>, <a href="http://spxy.njnu.edu.cn/index.htm#">NJNU Institute of Synthetic Biology Industry</a>, <a href="https://ai.nju.edu.cn/main.htm">NJU AI School</a> and <a href="http://www.frcbs.tsinghua.edu.cn/">Tsinghua FRCBS</a>.</font>
 
-</ul>
-<hr>
+<div class="row" style="margin-bottom: 30px;">
+  <div class="col-md-4">
+    <img src="static/project/pro2.jpeg" class="img-thumbnail" style="width: 100%; height: 200px; object-fit: cover;">
+  </div>
+  <div class="col-md-8">
+    <h3 style="color: #2c3e50; margin-bottom: 15px; margin-top: 0px;">MemAgent: Reshaping Long-Context LLM with
+      Multi-Conv RL based Memory Agent</h3>
+    <p style="text-align: justify; line-height: 1.6;">
+      MemAgent has demonstrated superb long-context capabilities,
+      being able to extrapolate from an 8K context trained on 32K text to a 3.5M QA task with performance loss < 5% and
+        achieves 95%+ accuracy in 512K RULER test. </p>
+        <p style="text-align: justify; line-height: 1.6;">
+          🔥多轮对话RL + LLM外挂Notepad 🗒️ = Memory Agent. <br>
+          🚀不需要改动任何网络架构（线性注意力/稀疏注意力），一切交给RL，LLM能自己学到在notepad里保留哪些关键信息并不断更新. 使用具有多轮独立对话的Agent处理长文并用DAPO算法进行了端到端训练。<br>
+          🏆仅使用8K Context的14B模型可从训练时的32K长度无损外推至3.5M，并且在512K长度的RULER测试集中取得95%+的成绩，7B模型也在测试中超越了更大尺寸的专门长文模型.
+        </p>
+        <p class="resource-row">
+          <span class="enhanced-btn" onclick="window.open('https://memagent-sialab.github.io/', '_blank')">
+            <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z">
+                </path>
+              </svg></span>Page
+          </span>
+          <span class="enhanced-btn" onclick="window.open('https://arxiv.org/pdf/2507.02259', '_blank')">
+            <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z">
+                </path>
+              </svg></span>Paper
+          </span>
+          <span class="enhanced-btn" id="memagent-code-btn"
+            onclick="window.open('https://github.com/BytedTsinghua-SIA/MemAgent', '_blank')">
+            <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z">
+                </path>
+              </svg></span>Code<span class="btn-badge new">NEW</span>
+          </span>
+          <span class="enhanced-btn"
+            onclick="window.open('https://huggingface.co/datasets/BytedTsinghua-SIA/hotpotqa', '_blank')">
+            <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"
+                aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
+                <path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"></path>
+              </svg></span>Data
+          </span>
+          <span class="enhanced-btn"
+            onclick="window.open('https://huggingface.co/BytedTsinghua-SIA/RL-MemoryAgent-14B', '_blank')">
+            <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"
+                aria-hidden="true">
+                <circle cx="6" cy="6" r="2"></circle>
+                <circle cx="18" cy="6" r="2"></circle>
+                <circle cx="6" cy="18" r="2"></circle>
+                <circle cx="18" cy="18" r="2"></circle>
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M8 6l2.5 4.5M16 6l-2.5 4.5M8 18l2.5-4.5M16 18l-2.5-4.5"></path>
+              </svg></span>Model
+          </span>
+          <span class="enhanced-btn" id="memagent-scholar-btn"
+            onclick="window.open('https://scholar.google.com/scholar?q=MemAgent+Reshaping+Long-Context+LLM+Multi-Conv+RL+Memory+Agent', '_blank')">
+            <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"
+                aria-hidden="true">
+                <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path>
+              </svg></span>Citations<span class="btn-badge new">NEW</span>
+          </span>
+        </p>
+  </div>
+</div>
+
+<div class="row" style="margin-bottom: 30px;">
+  <div class="col-md-4">
+    <img src="static/project/pro1.jpeg" class="img-thumbnail" style="width: 100%; height: 200px; object-fit: cover;">
+  </div>
+  <div class="col-md-8">
+    <h3 style="color: #2c3e50; margin-bottom: 15px; margin-top: 0px;">DAPO: an Open-Source LLM Reinforcement Learning
+      System at Scale</h3>
+    <p style="text-align: justify; line-height: 1.6;">
+      We propose the Decoupled Clip and Dynamic sAmpling Policy Optimization (DAPO) algorithm. By making our work
+      publicly available,
+      we provide the broader research community and society with practical access to scalable reinforcement learning,
+      enabling all to benefit
+      from these advancements. Our system is based on the awesome verl framework. Thanks for their great work! Applying
+      DAPO training to Qwen2.5-32B
+      base model proves to outperform the previous state-of-the-art DeepSeek-R1-Zero-Qwen-32B on AIME 2024, achieving
+      50% accuracy with 50% less
+      training steps.
+    </p>
+    <p style="text-align: justify; line-height: 1.6;">
+      🚀我们提出了DAPO，一个工业级别的，训练稳定高效率的，框架、数据、训练策略完全开源的大规模强化学习系统，RL from Pretrained (Qwen2.5-32B) 在 AIME 上跑到了50分，超越了之前
+      DeepSeek 在 R1 paper 里达到的的47分SOTA，欢迎试用！
+    </p>
+    <p class="resource-row">
+      <span class="enhanced-btn" onclick="window.open('https://dapo-sia.github.io/', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z">
+            </path>
+          </svg></span>Page
+      </span>
+      <span class="enhanced-btn" onclick="window.open('https://arxiv.org/abs/2507.14203', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z">
+            </path>
+          </svg></span>Paper
+      </span>
+      <span class="enhanced-btn" id="dapo-code-btn"
+        onclick="window.open('https://github.com/BytedTsinghua-SIA/DAPO', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z">
+            </path>
+          </svg></span>Code<span class="btn-badge new">NEW</span>
+      </span>
+      <span class="enhanced-btn"
+        onclick="window.open('https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
+            <path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"></path>
+          </svg></span>Data
+      </span>
+      <span class="enhanced-btn"
+        onclick="window.open('https://huggingface.co/BytedTsinghua-SIA/DAPO-Qwen-32B', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <circle cx="6" cy="6" r="2"></circle>
+            <circle cx="18" cy="6" r="2"></circle>
+            <circle cx="6" cy="18" r="2"></circle>
+            <circle cx="18" cy="18" r="2"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M8 6l2.5 4.5M16 6l-2.5 4.5M8 18l2.5-4.5M16 18l-2.5-4.5"></path>
+          </svg></span>Model
+      </span>
+      <span class="enhanced-btn" id="dapo-scholar-btn"
+        onclick="window.open('https://scholar.google.com/scholar?q=DAPO+Open-Source+LLM+Reinforcement+Learning+System+Scale', '_blank')">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path>
+          </svg></span>Citations<span class="btn-badge new">NEW</span>
+      </span>
+    </p>
+  </div>
+</div>
 
 
-<h2> Recent Publication</h2>
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-  <head> 
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
-    <meta http-equiv="cache-control" content="no-cache" /> 
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="bibtex_js.js" type="text/javascript" charset="utf-8"></script>
-    <bibtex src="recent.bib"></bibtex>
-    
-    <script>
-    $(function() {
-      $("#Fontselector").on("change",function() {
+
+<!-- <h2>
+  <div class="kuai"></div> Recent Publication
+</h2>
+
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="cache-control" content="no-cache" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="bibtex_js.js" type="text/javascript" charset="utf-8"></script>
+  <bibtex src="recent.bib"></bibtex>
+
+  <script>
+    $(function () {
+      $("#Fontselector").on("change", function () {
         var font = $("#Fontselector option:selected").text();
-        console.log(font);
-    
-        $('.title.fonters').each(function() {
-          $(this).css("font-family",font);
+
+        $('.title.fonters').each(function () {
+          $(this).css("font-family", font);
         });
-      }); 
-    });   
+      });
+    });
     function reset() {
       $("select").each(function () {
-        localStorage.setItem($(this).attr("id"),"");
+        localStorage.setItem($(this).attr("id"), "");
         $(this).val("");
-      }); 
+      });
       $("#searchbar").val("");
       $("#searchbar").trigger('change');
     }
-    </script>
-    
-    <style>
-      html,body,span,h1 {
-        /*font-family: "Times New Roman", Times, serif;*/
-        font-size: 16px;
-      }
-      bibtex { display: none; }
-      .searchbar { margin-left:0px;}
-      #bibtex_errors { margin-top:5px; color: red;}
-      h1.header {margin-left:5px;}<p><p><p><p>
-      h1.YEAR { font-size: 18px; font-weight: bold; display: inline; margin-left:8px;}
-      [class="Hao Zhou"] {
-        font-weight: bold;
-        background-color: #eeffee;
-      }
-    </style>
-    
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    
-  </head>
+  </script>
+
+  <style>
+    html,
+    body,
+    span,
+    h1 {
+      font-size: 16px;
+    }
+
+    bibtex {
+      display: none;
+    }
+
+    .searchbar {
+      margin-left: 0px;
+    }
+
+    #bibtex_errors {
+      margin-top: 5px;
+      color: red;
+    }
+
+    h1.header {
+      margin-left: 5px;
+    }
+
+    h1.YEAR {
+      font-size: 18px;
+      font-weight: bold;
+      display: inline;
+      margin-left: 8px;
+    }
+
+    [class="Hao Zhou"] {
+      font-weight: bold;
+      background-color: #eeffee;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head> -->
+
 <body>
-<a name="top"></a>
+  <a name="top"></a>
 
-<div class="bibtex_structure">
-      <div style="padding-bottom:10px;"></div>
-      <div class="sort journal" extra="DESC string">
-        <div class="templates"></div>
-  </div>
-</div>
-
-<div id="bibtex_display">
-  
-  <div class="if bibtex_template" style="display: none;">
-
-    <ul> <li>
-
-      <span class="if journal !nolink">
-        <a class="bibtexVar" href="http://www.cs.cmu.edu/~mmv/papers/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
-            <span style="text-decoration: underline;" class="title"></span>,
-        </a>
-      </span>
-      <span class="if title"><font size="5" color="blue"><span class="title"></span></font></span>
-
-      <!-- <div class="if student">AAA</div> -->
-
-      <div class="if author">
-        <span class="if student"><font size="4" color="tomato">*</font></span><span class="author"></span>
-      </div>
-      <div>
-        <span class="if journal"><em><span class="journal"></span></em>,</span>
-        <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
-        <span class="if editor"><span class="editor"></span> (editors),</span>
-        <span class="if publisher"><em><span class="publisher"></span></em>,</span>
-        <span class="if institution"><span class="institution"></span>,</span>
-        <span class="if address"><span class="address"></span>,</span>
-        <span class="if volume"><span class="volume"></span>,</span>
-        <span class="if journal number">(<span class="number"></span>),</span>
-        <span class="if pages"> pages <span class="pages"></span>,</span>
-        <span class="if month"><span class="month"></span>,</span>
-        <span class="if year"><span class="year"></span>.</span>
-        <span class="if note"><font color="red"><span class="note"></span></font></span>
-      </div>
-      <span class="if comment"><div><span class="comment"></span></div></span>
-      <span>
-              <a class="bibtexVar label label-success" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+"
-                aria-expanded="false"
-                aria-controls="bib+BIBTEXKEY+"
-                extra="BIBTEXKEY">Bib</a>
-      </span>
-      <span class="if eprint"><a class="bibtexVar label label-primary" href="+EPRINT+" role="button" extra="eprint">paper</a></span>
-              <span class="if url"><a class="bibtexVar label label-warning" href="+URL+" role="button" extra="url">url</a></span>
-              <span class="if software"><a class="bibtexVar label label-danger" href="+SOFTWARE+" role="button"
-                  extra="software">Software</a></span>
-              <span class="if code"><a class="bibtexVar label label-danger" href="+CODE+" role="button" extra="code">code</a></span>
-              <span class="if slides"><a class="bibtexVar label label-warning" href="+SLIDES+" role="button" extra="slides">slides</a></span>
-              <span class="if abstract">
-              <a class="bibtexVar label label-default" role="button" data-toggle="collapse" href="#abs+BIBTEXKEY+" aria-expanded="false" aria-controls="abs+BIBTEXKEY+" extra="BIBTEXKEY">abstract</a>
-              </span>
-      <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
-      <div class="well">
-        <pre><span class="bibtexraw noread"></span></pre>
-      </div>
+  <div class="bibtex_structure">
+    <div style="padding-bottom:10px;"></div>
+    <div class="sort journal" extra="DESC string">
+      <div class="templates"></div>
     </div>
-    <div class="bibtexVar collapse" id="abs+BIBTEXKEY+" extra="BIBTEXKEY">
-              <div>
-                <pre><span class="abstract"></span></pre>
-              </div>
-            </div>
-      <div style="display:none"><span class="bibtextype"></span></div>
-      <div style="display:none"><span class="if topic"><span class="topic"></span></span></div>
-    </li></ul>
   </div>
-  
-  
-</div>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <div id="bibtex_display">
+
+    <div class="if bibtex_template" style="display: none;">
+
+      <ul>
+        <li>
+
+          <span class="if journal !nolink">
+            <a class="bibtexVar" href="http://www.cs.cmu.edu/~mmv/papers/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
+              <span style="text-decoration: underline;" class="title"></span>,
+            </a>
+          </span>
+          <span class="if title">
+            <font size="4" color="blue" style="line-height: 0!important;"><span class="title"></span></font>
+          </span>
+
+          <!-- <div class="if student">AAA</div> -->
+
+          <div class="if author">
+            <span class="if student">
+              <font size="4" color="tomato">*</font>
+            </span><span class="author"></span>
+          </div>
+          <div>
+            <span class="if journal"><em><span class="journal"></span></em>,</span>
+            <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
+            <span class="if editor"><span class="editor"></span> (editors),</span>
+            <span class="if publisher"><em><span class="publisher"></span></em>,</span>
+            <span class="if institution"><span class="institution"></span>,</span>
+            <span class="if address"><span class="address"></span>,</span>
+            <span class="if volume"><span class="volume"></span>,</span>
+            <span class="if journal number">(<span class="number"></span>),</span>
+            <span class="if pages"> pages <span class="pages"></span>,</span>
+            <span class="if month"><span class="month"></span>,</span>
+            <span class="if year"><span class="year"></span>.</span>
+            <span class="if note">
+              <font color="red"><span class="note"></span></font>
+            </span>
+          </div>
+          <span class="if comment">
+            <div><span class="comment"></span></div>
+          </span>
+          <span>
+            <a class="bibtexVar label label-success" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+"
+              aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY">Bib</a>
+          </span>
+          <span class="if eprint"><a class="bibtexVar label label-primary" href="+EPRINT+" role="button"
+              extra="eprint">paper</a></span>
+          <span class="if url"><a class="bibtexVar label label-warning" href="+URL+" role="button"
+              extra="url">url</a></span>
+          <span class="if software"><a class="bibtexVar label label-danger" href="+SOFTWARE+" role="button"
+              extra="software">Software</a></span>
+          <span class="if code"><a class="bibtexVar label label-danger" href="+CODE+" role="button"
+              extra="code">code</a></span>
+          <span class="if slides"><a class="bibtexVar label label-warning" href="+SLIDES+" role="button"
+              extra="slides">slides</a></span>
+          <span class="if abstract">
+            <a class="bibtexVar label label-default" role="button" data-toggle="collapse" href="#abs+BIBTEXKEY+"
+              aria-expanded="false" aria-controls="abs+BIBTEXKEY+" extra="BIBTEXKEY">abstract</a>
+          </span>
+          <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+            <div class="well">
+              <pre><span class="bibtexraw noread"></span></pre>
+            </div>
+          </div>
+          <div class="bibtexVar collapse" id="abs+BIBTEXKEY+" extra="BIBTEXKEY">
+            <div>
+              <pre><span class="abstract"></span></pre>
+            </div>
+          </div>
+          <div style="display:none"><span class="bibtextype"></span></div>
+          <div style="display:none"><span class="if topic"><span class="topic"></span></span></div>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
+
 </html>
 
 
 <hr>
-    <h2>Honors and Awards</h2>
-    <ul>
-      <li> Best Short Paper of INLG, 2022 </li>
-      <li> Ranked #1 on WMT EN-DE translation, 2021 </li>
-      <li> CCF NLPCC Distinguished Young Scientist, 2021 </li>
-      <li> Best Paper Award of ACL, 2021</li>
-      <li> CAAI Doctoral Dissertation Award, 2019 </li>
-      <li> Outstanding Doctoral Dissertation of Nanjing University, 2019 </li>
-      <li> National Scholarship, 2011/2016  </li>
+<h2>
+  <div class="kuai"></div> Honors and Awards
+</h2>
+<ul>
+  <li> Beijing Nova Program, 2024 </li>
+  <li> Ranked #1 on WMT EN-DE translation, 2021 <span
+      style="font-size: 12px; margin-left: 6px; background-color: #f0ad4e; color: #fff; border-radius: 3px; padding: 2px 6px; display: inline-block;">🏆
+      using NAT
+    </span> </li>
+  <li> CCF NLPCC Distinguished Young Scientist, 2021 </li>
+  <li> CAAI Doctoral Dissertation Award, 2019 </li>
+  <li> Outstanding Doctoral Dissertation of Nanjing University, 2019 </li>
+  <li> National Scholarship, 2011/2016 </li>
+</ul>
+
+
+<h2>
+  <div class="kuai"></div>Talks
+</h2>
+
+<ul>
+  <li type="disc">
+    <font size="3"><strong>Generative AI for Scientific Discovery</strong><span class="label label-primary"
+        style="margin-left:8px;"         onclick="window.open(
+          // 'files/GenAI4S.pdf'
+          'https://github.com/zhouh/zhouh.github.io/releases/download/v1.0/GenAI4S.pdf?raw=true'
+          ,'_blank')">Slides</span>
+    </font>
+    <ul style="margin-top:8px;">
+      <li>
+        <font size="3" style="color:#1e6bb8;">Tsinghua Young Scholars Monthly Salon (清华大学青年学者沙龙), Beijing, March, 2024
+        </font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">CATL (宁德时代), Ningde, April, 2024</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">NJU ChemBIC Research (南京大学化学与生物医药创新研究院学术年会), April, 2024</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">NJNU Synthetic Biology Research Center (南京师范大学合成生物研究中心), Nanjing, May,
+          2024</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">NJU AI School (南京大学人工智能学院), Nanjing, May, 2024</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">Tsinghua FRCBS (清华大学北京生物结构前沿研究中心), Beijing, May, 2024</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">Beijing Academy of AI Conference (智源大会), Beijing, June, 2024</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">Beijing Hospital (北京医院), Beijing, June, 2024</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">Annual Academic Conference of Shanghai AI Lab (上海人工智能实验室学术年会), Shanghai,
+          December, 2024</font>
+      </li>
     </ul>
+  </li>
+  <li type="disc">
+    <font size="3"><strong>Advances of Large Scaled Parallel Text Generationn</strong>
+      <span class="label label-primary" style="margin-left:8px;"
+        onclick="window.open(
+          // 'files/ParaGen.pdf'
+          'https://github.com/zhouh/zhouh.github.io/releases/download/v1.0/ParaGen.pdf?raw=true'
+          ,'_blank')">Slides</span>
+    </font>
+    <ul style="margin-top:8px;">
+      <li>
+        <font size="3" style="color:#1e6bb8;">NLGIW Tutorials / CIPS ATT 30 (第一届自然语言生成与智能写作讲习班), Online, April 2022.
+        </font><span style="margin-left:8px; font-size:12px; color:#c0392b; font-style:italic;">with Lihua Qian</span>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">Invited Talk at NLG workshop of CNCC, Shenzhen, December, 2021</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">Invited Talk at Artificial Intelligence Industry Summit Forat of CCF-AI
+          (中国计算机学会人工智能会议产业高峰论坛), Yantai, July, 2021</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">Invited talk at NEU (东北大学), THU (清华大学), 2021 - 2022.</font>
+      </li>
+    </ul>
+  </li>
+  <li type="disc">
+    <font size="3"><strong>Deep Generative Model for Text Generation</strong>
+      <span class="label label-primary" style="margin-left:8px;"
+        onclick="window.open(
+          // 'files/DGM4TG.pdf'
+          'https://github.com/zhouh/zhouh.github.io/releases/download/v1.0/DGM4TG.pdf?raw=true'
+          ,'_blank')">Slides</span>
+    </font>
+    <ul style="margin-top:8px;">
+      <li>
+        <font size="3" style="color:#1e6bb8;">NLPCC Tutorials /CCF Advanced Disciplines Lectures (ADL 107), Dunhuang,
+          October 2019.</font><span style="margin-left:8px; font-size:12px; color:#c0392b; font-style:italic;">with
+          Prof. Lei Li</span>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">CAAI-AIDL (中国人工智能学会前沿讲习班), Shanghai, December 2019.</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">CCMT (第十六届全国机器翻译大会), Tutorial, Online, October 2020.</font>
+      </li>
+      <li>
+        <font size="3" style="color:#1e6bb8;">Invited talk at FDU (复旦大学), NJU (南京大学), NJNU (南京师范大学), WestLake University
+          (西湖大学), SJTU (上海交通大学)， HIT (哈尔滨工业大学), 2019 - 2020.</font>
+      </li>
+    </ul>
+  </li>
+  <li type="disc">
+    <font size="3"><strong>Discreteness in Neural Natural Language Processing</strong>
+      <span class="label label-primary" style="margin-left:8px;"
+        onclick="window.open(
+          // 'files/EMNLP19_Tutorials_DNNLP/EMNLP2019_Tutorial_Part1.pdf'
+          'https://github.com/zhouh/zhouh.github.io/releases/download/v1.0/EMNLP2019_Tutorial_Part1.pdf?raw=true'
+          ,'_blank')">Slides P1</span>
+      <span class="label label-primary"
+        onclick="window.open(
+          // 'files/EMNLP19_Tutorials_DNNLP/EMNLP2019_Tutorial_Part2.pdf'
+          'https://github.com/zhouh/zhouh.github.io/releases/download/v1.0/EMNLP2019_Tutorial_Part2.pdf?raw=true'
+          ,'_blank')">Slides P2</span>
+      <span class="label label-primary"
+        onclick="window.open(
+          // 'files/EMNLP19_Tutorials_DNNLP/EMNLP2019_Tutorial_Part3.pdf'
+          'https://github.com/zhouh/zhouh.github.io/releases/download/v1.0/EMNLP2019_Tutorial_Part3.pdf?raw=true'
+          ,'_blank')">Slides P3</span>
 
-
+    </font>
+    <ul style="margin-top:8px;">
+      <li>
+        <font size="3" style="color:#1e6bb8;">EMNLP-IJCNLP 2019, Tutorial, HongKong </font><span
+          style="margin-left:8px; font-size:12px; color:#c0392b; font-style:italic;">with Prof. Lili Mou and Lei
+          Li</span>
+      </li>
+    </ul>
+  </li>
+</ul>
 <hr>
-    <h2>Academic Service</h2>
-    <ul>
-      <li> Area Chair of EMNLP 22; ACL 23; NeurIPS 22,23,24; ICML 23,24; ICLR 23,24;</li>
-      <li> Senior PC of AAAI 21,22; IJCAI 23, 24 </li>
-      <li> Standing Committee of TACL since 2017 </li>
-    </ul>
 
-<!-- 
-<h2>Talks</h2> 
-
-<ul>
-  <li type="circle"><font size="3">Invited talk to NLPCC 2018, student workshop</font></li>
-  <li type="circle"><font size="3">Invited talk to CWMT 2017 of "How to ".</font></li>
-
-
-</ul> -->
-<!-- 
-
-<h2>Software</h2>
-<ul>
-<li><p><a href="https://github.com/zhouh/NJU-Parser">NJU-Parser</a> A fast implementation of shift-reuce constituent parser in JAVA.</p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://github.com/zhouh/snnow">SnnOw</a> A toolkit for fundamental natural language processing with neural networks.</p>
-</li>
-</ul>
- -->
-<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">"> </script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
-$('.paper').click(function(){$($(this).find('.abstract')).toggle()})
+  $('.paper').click(function () { $($(this).find('.abstract')).toggle() })
+
+  // 清理过期的缓存数据
+  function cleanExpiredCache() {
+    const keys = Object.keys(localStorage);
+    const now = Date.now();
+    let cleanedCount = 0;
+
+    keys.forEach(key => {
+      if (key.startsWith(CACHE_PREFIX) || key.startsWith(CITATION_CACHE_PREFIX)) {
+        try {
+          const cached = localStorage.getItem(key);
+          if (cached) {
+            const cacheData = JSON.parse(cached);
+            if (now - cacheData.timestamp > CACHE_EXPIRY) {
+              localStorage.removeItem(key);
+              cleanedCount++;
+            }
+          }
+        } catch (error) {
+          localStorage.removeItem(key);
+          cleanedCount++;
+        }
+      }
+    });
+
+    if (cleanedCount > 0) {
+      console.log(`🧹 清理了 ${cleanedCount} 个过期缓存`);
+    }
+  }
+
+  // 限制Recent Publication只显示前3条
+  $(document).ready(function () {
+    // 清理过期缓存
+    cleanExpiredCache();
+
+    setTimeout(function () {
+      $('#bibtex_display li').each(function (index) {
+        if (index >= 2) {
+          $(this).hide();
+        }
+      });
+    }, 100);
+
+    console.log('🚀 开始加载数据...');
+
+    // 获取GitHub仓库的star数（先显示缓存数据，再异步更新）
+    fetchGitHubStars('GenSI-THUAIR/AMix-1', 'amix-code-btn');
+    fetchGitHubStars('BytedTsinghua-SIA/MemAgent', 'memagent-code-btn');
+    fetchGitHubStars('BytedTsinghua-SIA/DAPO', 'dapo-code-btn');
+
+    // 异步获取引用数（先显示缓存数据，再异步更新）
+    console.log('📊 开始获取引用数...');
+
+    // 并行获取每篇论文的引用数
+    Promise.all([
+      getCitationCount('Seed Diffusion Preview', 'seed-scholar-btn'),
+      getCitationCount('AMix-1', 'amix-scholar-btn'),
+      getCitationCount('MemAgent', 'memagent-scholar-btn'),
+      getCitationCount('DAPO', 'dapo-scholar-btn')
+    ]).then(results => {
+      console.log('✅ 所有引用数获取完成:', results);
+    }).catch(error => {
+      console.error('❌ 获取引用数时出错:', error);
+    });
+
+    // 对每一组资源按钮应用横向配色
+    document.querySelectorAll('.resource-row').forEach(function (row) {
+      applyRowTones(row);
+    });
+  });
 </script>
-<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">"> </script>
 <script type="text/javascript">
-$('.circle').click(function(){$($(this).find('.alumi')).toggle()})
+  $('.circle').click(function () { $($(this).find('.alumi')).toggle() })
 </script>

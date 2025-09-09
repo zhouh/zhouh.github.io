@@ -1,6 +1,6 @@
 # Site settings
-title: You Blog                     #你博客的标题
-header-img: static/zhouh.jpg     #显示在首页的背景图片
+title: Hao Zhou's Homepage          # 周浩教授个人主页
+header-img: "static/2024_p.jpeg"    # 显示在首页的背景图片
 email: haozhou0806@gmail.com    
-url: "https://zhouh.github.io"          # 这个就是填写你的博客地址
-baseurl: ""      # 这个我们不用填写
+url: "https://zhouh.github.io"     # 个人主页地址
+baseurl: ""                        # Jekyll base URL
