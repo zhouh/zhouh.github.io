@@ -3,12 +3,12 @@ _site/
 public/
 
 # Jekyll caches
-.jekyll-cache/
-.jekyll-metadata
+.jekyll-cache/*
+.jekyll-metadata/*
 .sass-cache/
 
 # Bundler / Ruby
-.bundle/
+.bundle/*
 vendor/bundle/
 vendor/cache/
 
