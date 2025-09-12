@@ -1,5 +1,29 @@
-*.swp
-.DS_Store
+# Jekyll build outputs
 _site/
+public/
+
+# Jekyll caches
+.jekyll-cache/*
+.jekyll-metadata/*
+.sass-cache/
+
+# Bundler / Ruby
+.bundle/*
+vendor/bundle/
+vendor/cache/
+
+# macOS / editors
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs / temp
+*.log
+tmp/
+.cache/
+
+# Ignore static/pub and files
+./static/pub/*
 ./files/*
-./statics/pub/*

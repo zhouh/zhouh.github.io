@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <meta name="author" content="Hao Zhou">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="{{site.baseurl}}/">
-
     <title>{{page.title}}</title>
 
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for Hao Zhou's Blog" href="rss.xml" />
-    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- Google Analytics -->
     <script type="text/javascript">
@@ -48,6 +46,14 @@
       .navbar {
         margin-bottom: 5px;
       }
+
+      .navbar-nav > li > a {
+        font-size: 14px;
+      }
+
+      .navbar-brand {
+        font-size: 18px;
+      }
     </style>
   </head>
   <body>
@@ -64,12 +70,15 @@
             <li {% if page.section == 'home'%} class="active" {% endif %} >
               <a href="index.html">Home</a>
             </li>
+            <!-- <li {% if page.section == 'blog'%} class="active" {% endif %} >
+              <a href="blog.html">Blog</a>
+            </li> -->
             <li {% if page.section == 'publications'%} class="active" {% endif %} >
               <a href="publications.html">Publications</a>
             </li>
-            <li {% if page.section == 'Students'%} class="active" {% endif %} >
+            <!-- <li {% if page.section == 'Students'%} class="active" {% endif %} >
               <a href="students.html">Lab</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
