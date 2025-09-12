@@ -47,11 +47,11 @@ title: "Hao Zhou（周浩)"
     transition: all 0.3s ease;
     background: white;
     border-radius: 8px;
-    padding: 8px;
+    padding: 6px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     z-index: 1000;
-    width: 216px;
-    height: 216px;
+    width: 162px;
+    height: 162px;
   }
 
   .wx-qrcode::before {
@@ -60,13 +60,13 @@ title: "Hao Zhou（周浩)"
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    border: 6px solid transparent;
+    border: 5px solid transparent;
     border-top-color: white;
   }
 
   .wx-qrcode img {
-    width: 200px !important;
-    height: 200px !important;
+    width: 150px !important;
+    height: 150px !important;
     display: block !important;
     object-fit: cover !important;
   }
@@ -200,6 +200,45 @@ title: "Hao Zhou（周浩)"
       font-size: 10px;
       padding: 1px 4px;
       margin-left: 3px;
+    }
+  }
+
+  /* 响应式布局 - 桌面端垂直居中 */
+  @media (min-width: 768px) {
+    .profile-row {
+      display: flex !important;
+      align-items: center !important;
+      min-height: 300px;
+    }
+  }
+
+  /* 移动端恢复默认布局 */
+  @media (max-width: 767px) {
+    .profile-row {
+      display: block !important;
+      min-height: auto !important;
+    }
+    .profile-row .col-sm-3,
+    .profile-row .col-sm-9 {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* 邮箱行样式 */
+  .email-row {
+    display: flex;
+    align-items: center;
+  }
+
+  /* 移动端邮箱行允许换行 */
+  @media (max-width: 767px) {
+    .email-row {
+      display: block !important;
+      line-height: 1.6;
+    }
+    .email-row img {
+      vertical-align: middle;
+      margin-bottom: 5px;
     }
   }
 </style>
@@ -477,11 +516,11 @@ title: "Hao Zhou（周浩)"
 
 
 
-<div class="row">
-  <div class="col-sm-3 col-md-3" style="display: flex; align-items: flex-end;">
+<div class="row profile-row">
+  <div class="col-sm-3 col-md-3">
     <img src="static/2024_p.jpeg" class="img-thumbnail" width="500px" style="margin-bottom: 0px;">
   </div>
-  <div class="col-sm-9 col-md-9" style="margin-top: 10px;">
+  <div class="col-sm-9 col-md-9">
     <h1>Hao Zhou (周浩)</h1>
     <p>Research Associate Professor</p>
     <p>
@@ -489,7 +528,7 @@ title: "Hao Zhou（周浩)"
         University</a><br>
     </p>
 
-    <p style="display: flex;align-items: center;"> <img src="static/email.png" width="20" style="margin-right: 5px;"
+    <p class="email-row"> <img src="static/email.png" width="20" style="margin-right: 5px;"
         alt="@" style="vertical-align: -1px"> Email: <a
         href="mailto:zhouhao@air.tsinghua.edu.cn">zhouhao@air.tsinghua.edu.cn</a> & <a
         href="mailto:haozhou0806@gmail.com">haozhou0806@gmail.com</a></p>
