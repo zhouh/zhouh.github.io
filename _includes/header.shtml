@@ -76,12 +76,10 @@
             <li {% if page.section == 'publications'%} class="active" {% endif %} >
               <a href="publications.html">Publications</a>
             </li>
+            <li><a href="https://www.gensi-thuair.com/#/portal/about" target="_blank">Lab</a></li>
             <!-- <li {% if page.section == 'Students'%} class="active" {% endif %} >
               <a href="students.html">Lab</a>
             </li> -->
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://www.gensi-thuair.com/#/portal/about" target="_blank">Lab</a></li>
           </ul>
         </div>
       </div>
