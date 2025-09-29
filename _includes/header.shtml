@@ -80,6 +80,9 @@
               <a href="students.html">Lab</a>
             </li> -->
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.gensi-thuair.com/#/portal/about" target="_blank">Lab</a></li>
+          </ul>
         </div>
       </div>
     </nav>
